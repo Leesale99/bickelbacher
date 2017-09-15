@@ -2,13 +2,10 @@
  * Base Styles
  */
 
-// html {
-//   font-size: 10px;
-// }
-
 body {
   font-family: 'Alegreya Sans', sans-serif;
   color: $text-color-dark;
+  font-size: $font-size-base;
 }
 
 p {

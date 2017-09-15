@@ -5,8 +5,8 @@
 .topbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.625em 2em;
-  background-color: #000000;
+  padding: space(md) space(xxl);
+  background-color: $color-dark;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 
   &__text {
@@ -24,7 +24,7 @@
   &__nav-item {
     display: inline-block;
     float: left;
-    margin-right: 0.625em;
+    margin-right: space(md);
     font-size: 0.938rem;
 
     &:last-child {
@@ -34,5 +34,12 @@
     & > a {
       color: $text-color-light;
     }
+  }
+}
+
+.navbar {
+  &--primary {
+    padding: space(xl) space(xxl);
+    background: $color-primary;
   }
 }

@@ -5,6 +5,7 @@
  // Vendors
 @import 'node_modules/bootstrap/scss/bootstrap';
 // Modules
+@import './modules/mixins.scss';
 @import './modules/variables';
 @import './modules/typography';
 // Layouts
@@ -12,3 +13,4 @@
 @import './layouts/header';
 // Components
 @import './components/cart-button';
+@import './components/text-input';

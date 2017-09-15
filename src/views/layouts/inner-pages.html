@@ -19,7 +19,7 @@
 
 	{{> icons}}
 
-	<header>
+	<header class="header">
 		<div class="topbar">
 			<p class="topbar__text">So erreichen Sie uns <a href="tel:+498241911271">+49 8241 911271</a> oder <a href="mailto:info@bickelbacher.com">info@bickelbacher.com</a></p>
 			<ul class="topbar__nav">
@@ -28,7 +28,7 @@
 				<li class="topbar__nav-item"><a href="#">Anmelden</a></li>
 			</ul>
 		</div>
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<nav class="navbar navbar-expand-md navbar--primary">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,9 +46,9 @@
 						<a class="nav-link" href="#">SHOP</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-				</form>
+				<div>
+					<input class="text-input text-input--dark" type="text" placeholder="Search" aria-label="Search">
+				</div>
 				<button class="btn btn-outline-success cart-btn" type="button">
 					<svg class="cart-btn__icon icon"><use xlink:href="#cart_button"></use></svg>
 					<p class="cart-btn__label">
