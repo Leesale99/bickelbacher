@@ -6,7 +6,10 @@
   justify-content: space-between;
   padding: 5px 15px;
 
-  &__text{}
+  &__text{
+    font-weight: 500;
+    font-size: 0.938rem;
+  }
 
   &__nav {
 

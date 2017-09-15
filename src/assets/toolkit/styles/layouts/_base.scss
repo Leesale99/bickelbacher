@@ -2,12 +2,25 @@
  * Base Styles
  */
 
+// html {
+//   font-size: 10px;
+// }
+
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  color: $text-color-dark;
 }
 
 p {
   margin: 0;
+}
+
+a {
+  color: $text-color-dark;
+
+  &:hover, &:focus, &:active {
+      color: $text-color-dark;
+  }
 }
 
 ol, ul, dl {
