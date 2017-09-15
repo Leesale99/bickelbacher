@@ -2,6 +2,11 @@
  * Toolkit styles
  */
 
-body {
-  font-family: sans-serif;
-}
+// Modules
+@import './modules/variables';
+ // Vendors
+@import 'node_modules/bootstrap/scss/bootstrap';
+// Layouts
+@import './layouts/base';
+// Components
+@import './components/cart-button';

@@ -1,0 +1,22 @@
+/**
+ * Base Styles
+ */
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

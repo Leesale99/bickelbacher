@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{title}}</title>
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+
+<body>
+
+	{{> icons}}
+
+	<header>
+		<div class="navbar-top">
+			<p>Lorem ipsum dolor sit amet.</p>
+			<ul>
+				<li>Mein Benutzerkonto</li>
+				<li>Zur Kasse</li>
+				<li>Anmelden</li>
+			</ul>
+		</div>
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">PRODUKTE<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ÜBER BICKELBACHER</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">SHOP</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				</form>
+				<button class="btn btn-outline-success cart-btn" type="button">
+					<svg class="cart-btn__icon icon"><use xlink:href="#cart_button"></use></svg>
+					<p class="cart-btn__label">
+						(<span class="count">0</span>)Artikel - <span class="price">0.00</span>
+					</p>
+				</button>
+			</div>
+		</nav>
+		<div class="sub-nav">
+			<nav class="breadcrumb">
+				<a class="breadcrumb__item breadcrumb-item" href="#">Startseite</a>
+				<a class="breadcrumb__item breadcrumb-item" href="#">Shop</a>
+				<a class="breadcrumb__item breadcrumb-item" href="#">Bouillon & Brühen</a>
+				<span class="breadcrumb__item breadcrumb-item active">Bouillon Rind</span>
+			</nav>
+		</div>
+	</header>
+
+
+	{% body %}
+
+	<!-- toolkit scripts -->
+	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+
+</html>
