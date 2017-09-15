@@ -6,9 +6,13 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 ol, ul, dl {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 

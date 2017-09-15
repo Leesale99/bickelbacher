@@ -1,12 +1,18 @@
 /**
  * Header
  */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
 
-.nav {
+  &__text{}
 
-  &-top {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 15px;
+  &__nav {
+
+  }
+
+  &__nav-item {
+    display: inline-block;
   }
 }
