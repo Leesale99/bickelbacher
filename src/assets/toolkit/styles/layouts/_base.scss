@@ -26,6 +26,19 @@ ol, ul, dl {
     list-style: none;
 }
 
+button, input {
+  border: none;
+  padding: 0;
+
+  &:focus {
+    outline: inherit;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
 .icon {
   display: inline-block;
   width: 1em;

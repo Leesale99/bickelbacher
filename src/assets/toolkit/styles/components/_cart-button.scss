@@ -1,9 +1,25 @@
 .cart-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 3em;
+  padding: 1em;
+  background: $input-background-dark;
+  font-weight: 500;
+  color: $text-color-light;
+
   &__label {
-    display: inline;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+    line-height: 1;
   }
 
   &__icon {
-    vertical-align: text-bottom;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: top;
+    margin-right: 0.333em;
+    position: relative;
+    top: -0.15em;
   }
 }

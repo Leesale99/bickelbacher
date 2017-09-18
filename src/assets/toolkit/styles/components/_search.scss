@@ -1,0 +1,56 @@
+.search {
+  position: relative;
+
+  &.focused {
+
+
+    .search__field {
+        width: 10em;
+        color: $text-color-light;
+    }
+
+    .search__icon {
+      display: none;
+    }
+  }
+
+  &:hover {
+    cursor: text;
+  }
+
+  &__field {
+    height: 3em;
+    width: 3em;
+    padding: 0.5em;
+    color: transparent;
+    border: 1px solid $border-color;
+    background: $input-background-dark;
+    transition: width 0.35s ease;
+
+    &::-webkit-input-placeholder {
+      opacity: 0;
+    }
+
+    &:-moz-placeholder {
+      opacity: 0;
+    }
+
+    &::-moz-placeholder {
+      opacity: 0;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: 0;
+    }
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 1em;
+    width: 1em;
+    fill: $text-color-light;
+  }
+}

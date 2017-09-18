@@ -2,11 +2,13 @@
  * Toolkit JavaScript
  */
 
+// Vendors
 const $ = require('jquery');
 window.jQuery = $;
 window.Popper = require('popper.js');
 require('bootstrap');
 
-
-import './example';
-import './components/select.js';
+// Components
+import './components/select';
+import './components/search';
+import './components/main-menu';
