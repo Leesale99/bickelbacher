@@ -5,7 +5,7 @@ import $ from 'jquery';
   const $menuToggle = $('#menu-toggler'),
     $mainMenu = $('#main-menu'),
     $win = $('body'),
-    $subNavToggle = $('li.main-nav__item--has-subnav > a');
+    $subNavToggle = $('.main-nav__link > a');
 
   $menuToggle.on('click', () => {
     $mainMenu.toggleClass('open');
@@ -20,7 +20,8 @@ import $ from 'jquery';
   });
 
   $subNavToggle.on('click', function () {
-    $(this).next('ul.sub-nav').slideToggle(400);
+    $(this).parent().next('ul.sub-nav')
+    .slideToggle(400);
     return false;
   });
 }());

@@ -48,7 +48,7 @@
 .main-bar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: 0.666em 1.333em;
   @include media-breakpoint-up(md) {

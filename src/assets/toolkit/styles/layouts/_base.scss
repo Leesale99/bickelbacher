@@ -1,7 +1,6 @@
 /**
  * Base Styles
  */
-
 body {
   font-family: 'Alegreya Sans', sans-serif;
   color: $text-color-dark;
@@ -13,21 +12,53 @@ p {
 }
 
 a {
+  position: relative;
   color: $text-color-dark;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 
-  &:hover, &:focus, &:active {
-      color: $text-color-dark;
-      outline: none;
+  &:hover {
+    color: $text-color-dark;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-transition-property: width;
+    transition-property: width;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit;
+    transition-duration: inherit;
   }
 }
 
-ol, ul, dl {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-button, input {
+button,
+input {
   border: none;
   padding: 0;
 

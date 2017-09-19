@@ -46,9 +46,22 @@
 					<svg class="search__icon icon"><use xlink:href="#search"></use></svg>
 				</div>
 				<ul class="main-nav">
-					<li class="main-nav__item"><a href="#">PRODUKTE <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a></li>
 					<li class="main-nav__item--has-subnav">
-						<a href="#">ÜBER BICKELBACHER <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a>
+						<div class="main-nav__link">
+							<a href="#">PRODUKTE</a>
+							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+						</div>
+						<ul class="sub-nav">
+							<li class="sub-nav__item"><a href="#">Lorem ipsum dolor</a></li>
+							<li class="sub-nav__item"><a href="#">Lorem ipsum</a></li>
+							<li class="sub-nav__item"><a href="#">Lorem ipsum dolor sit.</a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item--has-subnav">
+						<div class="main-nav__link">
+							<a href="#">ÜBER BICKELBACHER</a>
+							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+						</div>
 						<ul class="sub-nav">
 							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
 							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
@@ -56,7 +69,12 @@
 							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
 						</ul>
 					</li>
-					<li class="main-nav__item"><a href="#">SHOP <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a></li>
+					<li class="main-nav__item">
+						<div class="main-nav__link">
+							<a href="#">SHOP</a>
+							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<button class="cart-btn" type="button">
