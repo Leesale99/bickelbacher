@@ -17,6 +17,7 @@ a {
 
   &:hover, &:focus, &:active {
       color: $text-color-dark;
+      outline: none;
   }
 }
 

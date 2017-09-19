@@ -64,6 +64,7 @@
   }
 
   &--primary {
+    @extend .main-bar;
     background: $color-primary;
   }
 
@@ -73,7 +74,7 @@
     white-space: nowrap;
   }
 
-  
+
 
   .cart-btn {
     display: none;
@@ -91,11 +92,16 @@
   width: 2.5em;
   height: 2.5em;
   min-width: 2.5em;
+  background: transparent;
+
+&__wrap {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: normal;
-  background: transparent;
+
+}
   cursor: pointer;
   @include media-breakpoint-up(md) {
     font-size: 1.2em;

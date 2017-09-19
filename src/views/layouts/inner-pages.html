@@ -17,7 +17,9 @@
 
 <body>
 
+	<!-- Icons Sprite -->
 	{{> icons}}
+	<!-- /Icon Sprite -->
 
 	<!-- Header -->
 	<header class="header">
@@ -29,11 +31,13 @@
 				<li class="top-bar__nav-item"><a href="#">Anmelden</a></li>
 			</ul>
 		</div>
-		<nav class="main-bar main-bar--primary">
+		<nav class="main-bar--primary">
 			<button class="menu-btn" id="menu-toggler" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="menu-btn__bar"></span>
-				<span class="menu-btn__bar"></span>
-				<span class="menu-btn__bar"></span>
+				<div class="menu-btn__wrap">
+					<span class="menu-btn__bar"></span>
+					<span class="menu-btn__bar"></span>
+					<span class="menu-btn__bar"></span>
+				</div>
 			</button>
 			<a class="logo" href="#">Bichelbacker</a>
 			<div class="main-menu" id="main-menu">
@@ -42,17 +46,17 @@
 					<svg class="search__icon icon"><use xlink:href="#search"></use></svg>
 				</div>
 				<ul class="main-nav">
-					<li class="main-nav__item"><a href="#">PRODUKTE</a></li>
-					<li class="main-nav__item">
-						<a href="#">ÜBER BICKELBACHER</a>
+					<li class="main-nav__item"><a href="#">PRODUKTE <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a></li>
+					<li class="main-nav__item--has-subnav">
+						<a href="#">ÜBER BICKELBACHER <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a>
 						<ul class="sub-nav">
-							<li class="sub-nav__item">Item 1</li>
-							<li class="sub-nav__item">Item 2</li>
-							<li class="sub-nav__item">Item 3</li>
-							<li class="sub-nav__item">Item 4</li>
+							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
 						</ul>
 					</li>
-					<li class="main-nav__item"><a href="#">SHOP</a></li>
+					<li class="main-nav__item"><a href="#">SHOP <svg class="icon"><use xlink:href="#chevron-down"></use></svg></a></li>
 				</ul>
 			</div>
 			<button class="cart-btn" type="button">

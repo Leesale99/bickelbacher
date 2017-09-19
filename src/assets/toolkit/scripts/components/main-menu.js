@@ -1,10 +1,11 @@
 import $ from 'jquery';
 
-(function() {
+(function () {
 
   const $menuToggle = $('#menu-toggler'),
     $mainMenu = $('#main-menu'),
-    $win = $('body');
+    $win = $('body'),
+    $subNavToggle = $('li.main-nav__item--has-subnav > a');
 
   $menuToggle.on('click', () => {
     $mainMenu.toggleClass('open');
@@ -18,8 +19,8 @@ import $ from 'jquery';
     }
   });
 
-  // $("li.sub-menu > a").on('click', function() {
-  //   $(this).next('ul').slideToggle(400);
-  //   return false;
-  // });
+  $subNavToggle.on('click', function () {
+    $(this).next('ul.sub-nav').slideToggle(400);
+    return false;
+  });
 }());
