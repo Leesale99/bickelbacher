@@ -1,16 +1,44 @@
 .search {
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1.125em 2em;
+  border-bottom: 1px solid $border-color;
+    @include media-breakpoint-up(sm) {
+      padding: 1.125em 4em;
+    }
+  @include media-breakpoint-up(lg) {
+    padding: inherit;
+    margin-right: 1em;
+    order: 1;
+    border: none;
+  }
+
+  &:after {
+    content: '';
+    width: 2em;
+    display: block;
+    background: $color-primary;
+    height: 2em;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
 
   &.focused {
-
-
     .search__field {
-        width: 10em;
+      width: 100%;
+      @include media-breakpoint-up(lg) {
         color: $text-color-light;
+        width: 10em;
+      }
     }
 
     .search__icon {
-      display: none;
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
     }
   }
 
@@ -19,38 +47,64 @@
   }
 
   &__field {
-    height: 3em;
-    width: 3em;
-    padding: 0.5em;
-    color: transparent;
-    border: 1px solid $border-color;
-    background: $input-background-dark;
-    transition: width 0.35s ease;
+    width: 100%;
+    padding: 0 0.75em;
+    @include media-breakpoint-up(lg) {
+      height: 3em;
+      width: 3em;
+      padding: 0.5em;
+      color: transparent;
+      border: 1px solid $border-color;
+      background: $input-background-dark;
+      transition: width 0.35s ease;
+    }
 
     &::-webkit-input-placeholder {
-      opacity: 0;
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+      }
     }
 
     &:-moz-placeholder {
-      opacity: 0;
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+      }
     }
 
     &::-moz-placeholder {
-      opacity: 0;
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+      }
     }
 
     &:-ms-input-placeholder {
-      opacity: 0;
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+      }
     }
   }
 
   &__icon {
     display: block;
     position: absolute;
-    top: 1em;
-    left: 1em;
-    height: 1em;
-    width: 1em;
     fill: $text-color-light;
+    right: 2.35em;
+    z-index: 1;
+    top: 1.6em;
+
+    @include media-breakpoint-up(sm) {
+      right: 4.35em;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      position: absolute;
+      right: inherit;
+      top: 1em;
+      left: 1em;
+      height: 1em;
+      width: 1em;
+      fill: $text-color-light;
+    }
   }
 }

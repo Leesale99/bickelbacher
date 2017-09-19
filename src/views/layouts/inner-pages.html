@@ -30,22 +30,30 @@
 			</ul>
 		</div>
 		<nav class="main-bar main-bar--primary">
-			<button class="menu-btn" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="menu-btn" id="menu-toggler" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="menu-btn__bar"></span>
 				<span class="menu-btn__bar"></span>
 				<span class="menu-btn__bar"></span>
 			</button>
 			<a class="logo" href="#">Bichelbacker</a>
 			<div class="main-menu" id="main-menu">
-				<ul class="main-nav">
-					<li class="main-nav__item"><a href="#">PRODUKTE</a></li>
-					<li class="main-nav__item"><a href="#">ÜBER BICKELBACHER</a></li>
-					<li class="main-nav__item"><a href="#">SHOP</a></li>
-				</ul>
 				<div class="search">
 					<input class="search__field" type="text" placeholder="Search" aria-label="Search">
 					<svg class="search__icon icon"><use xlink:href="#search"></use></svg>
 				</div>
+				<ul class="main-nav">
+					<li class="main-nav__item"><a href="#">PRODUKTE</a></li>
+					<li class="main-nav__item">
+						<a href="#">ÜBER BICKELBACHER</a>
+						<ul class="sub-nav">
+							<li class="sub-nav__item">Item 1</li>
+							<li class="sub-nav__item">Item 2</li>
+							<li class="sub-nav__item">Item 3</li>
+							<li class="sub-nav__item">Item 4</li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#">SHOP</a></li>
+				</ul>
 			</div>
 			<button class="cart-btn" type="button">
 				<svg class="cart-btn__icon icon"><use xlink:href="#cart_button"></use></svg>
@@ -56,7 +64,7 @@
 		</nav>
 	</header>
 	<!-- Secondary Navigation -->
-	<section class="sub-nav">
+	<section class="secondary-nav">
 		<nav class="breadcrumb">
 			<a class="breadcrumb__item" href="#">Startseite</a>
 			<a class="breadcrumb__item" href="#">Shop</a>

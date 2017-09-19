@@ -3,10 +3,6 @@
  */
 .header {
   font-size: 0.9375rem;
-
-  .search {
-    margin-right: 1em;
-  }
 }
 
 .top-bar {
@@ -50,7 +46,6 @@
 }
 
 .main-bar {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -78,33 +73,7 @@
     white-space: nowrap;
   }
 
-  .main-menu {
-    flex-basis: 100%;
-    align-items: center;
-    display: none;
-    @include media-breakpoint-up(lg) {
-      display: flex;
-    }
-  }
-
-  .main-nav {
-    margin-left: auto;
-    display: block;
-    @include media-breakpoint-up(lg) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
-
-    &__item {
-      margin-right: space(md);
-
-      > a {
-        color: $text-color-light;
-        font-weight: 700;
-      }
-    }
-  }
+  
 
   .cart-btn {
     display: none;
