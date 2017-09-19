@@ -1,15 +1,74 @@
 /**
  * Base Styles
  */
-
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  color: $text-color-dark;
+  font-size: $font-size-base;
 }
 
-ol, ul, dl {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style: none;
+p {
+  margin: 0;
+}
+
+a {
+  position: relative;
+  color: $text-color-dark;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+
+  &:hover {
+    color: $text-color-dark;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-transition-property: width;
+    transition-property: width;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit;
+    transition-duration: inherit;
+  }
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input {
+  border: none;
+  padding: 0;
+
+  &:focus {
+    outline: inherit;
+  }
+}
+
+button {
+  cursor: pointer;
 }
 
 .icon {

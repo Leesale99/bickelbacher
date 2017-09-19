@@ -1,9 +1,22 @@
 .cart-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 3em;
+  padding: 0 1em;
+  background: $input-background-dark;
+  font-weight: 500;
+  color: $text-color-light;
+
   &__label {
-    display: inline;
+    display: inline-block;
+    white-space: nowrap;
   }
 
   &__icon {
-    vertical-align: text-bottom;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.333em;
+    position: relative;
   }
 }

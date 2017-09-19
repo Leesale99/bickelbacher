@@ -2,7 +2,50 @@
 // Variables
 // =============================================================================
 
+
+// Colors
+// ============================================
 // Color variables
 $color-dark: #000;
 $color-light: #fff;
+$color-gray-1: #747474;
+$color-gray-2: #979797;
+$color-gray-3: #939183;
 $color-primary: #bebc7e;
+
+// Text Colors
+$text-color-light:  rgba( $color-light, .7 );
+$text-color-dark: rgba( $color-dark, .7 );
+$text-color-medium: $color-gray-1;
+
+
+// Typography
+// ============================================
+$font-size-base: 0.875rem !default;
+$font-size-regular: 1rem !default;
+
+// Utility
+// ============================================
+$space: 0.625rem !default;
+
+$spaces: (
+  xxs: $space / 3,
+  xs: $space / 2,
+  sm: $space / 1.5,
+  md: $space,
+  lg: $space * 1.5,
+  xl: $space * 2,
+  xxl: $space * 3
+);
+
+// Border
+// ============================================
+$border-color: $color-gray-2;
+
+// Forms
+// ============================================
+$input-text-color: $text-color-medium;
+$input-font-size: $font-size-regular;
+$input-height: 2.813em;
+$input-background: $color-light;
+$input-background-dark: $color-gray-3;

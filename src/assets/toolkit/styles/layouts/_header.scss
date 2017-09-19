@@ -1,12 +1,119 @@
 /**
  * Header
  */
+.header {
+  font-size: 0.9375rem;
+}
 
-.nav {
-
-  &-top {
+.top-bar {
+  display: none;
+  padding: 0.666em 1.666em;
+  background-color: $color-dark;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0.666em 2em;
+  }
+
+  &__text {
+    color: $text-color-light;
+    font-weight: 500;
+
+    & > a {
+      color: $text-color-light;
+    }
+  }
+
+  &__nav {
+    &-item {
+      display: inline-block;
+      float: left;
+      margin-right: 0.666em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & > a {
+        color: $text-color-light;
+      }
+    }
+  }
+}
+
+.main-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0.666em 1.333em;
+  @include media-breakpoint-up(md) {
+    padding: 1.333em 1.666em;
+  }
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 1.333em 2em;
+  }
+
+  &--primary {
+    @extend .main-bar;
+    background: $color-primary;
+  }
+
+  .logo {
+    display: inline-block;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+
+
+  .cart-btn {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+}
+
+.menu-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 2.5em;
+  height: 2.5em;
+  min-width: 2.5em;
+  background: transparent;
+
+&__wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: normal;
+
+}
+  cursor: pointer;
+  @include media-breakpoint-up(md) {
+    font-size: 1.2em;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  &__bar {
+    width: 100%;
+    height: 0.55em;
+    display: block;
+    background: $color-dark;
   }
 }

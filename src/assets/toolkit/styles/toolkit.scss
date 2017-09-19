@@ -2,11 +2,18 @@
  * Toolkit styles
  */
 
-// Modules
-@import './modules/variables';
  // Vendors
 @import 'node_modules/bootstrap/scss/bootstrap';
+// Modules
+@import './modules/mixins.scss';
+@import './modules/variables';
+@import './modules/placeholders';
+@import './modules/typography';
 // Layouts
 @import './layouts/base';
+@import './layouts/header';
 // Components
 @import './components/cart-button';
+@import './components/main-menu';
+@import './components/text-input';
+@import './components/search';
