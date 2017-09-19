@@ -1,0 +1,10 @@
+.secondary-nav {
+  display: none;
+  background: $bg-color-light;
+  font-size: 1.125rem;
+  padding: 0.666em 1.666em;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}

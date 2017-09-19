@@ -12,8 +12,10 @@
 // Layouts
 @import './layouts/base';
 @import './layouts/header';
+@import './layouts/secondary-nav';
 // Components
 @import './components/cart-button';
 @import './components/main-menu';
 @import './components/text-input';
 @import './components/search';
+@import './components/breadcrumbs.scss';

@@ -2,10 +2,11 @@
  * Header
  */
 .header {
-  font-size: 0.9375rem;
+  font-size: $header-font-size;
 }
 
 .top-bar {
+  position: relative;
   display: none;
   padding: 0.666em 1.666em;
   background-color: $color-dark;
@@ -65,7 +66,7 @@
 
   &--primary {
     @extend .main-bar;
-    background: $color-primary;
+    background: $bg-color-primary;
   }
 
   .logo {

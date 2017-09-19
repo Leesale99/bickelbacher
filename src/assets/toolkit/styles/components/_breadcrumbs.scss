@@ -1,0 +1,30 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  &__item {
+
+    &--active {
+      @extend .breadcrumbs__item;
+
+      & > span {
+        color: $color-dark;
+        font-style: italic;
+      }
+    }
+
+    & + .breadcrumbs__item:before {
+      display: inline-block;
+      padding-right: 0.1rem;
+      padding-left: 0.1rem;
+      color: $text-color-primary;
+      content: '/';
+    }
+
+    & > a {
+      color: $text-color-primary;
+      font-style: italic;
+    }
+  }
+}

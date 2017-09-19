@@ -5,9 +5,11 @@
 
 // Colors
 // ============================================
-// Color variables
+
+// Base Colors
 $color-dark: #000;
 $color-light: #fff;
+$color-lighter: #f8f9fa;
 $color-gray-1: #747474;
 $color-gray-2: #979797;
 $color-gray-3: #939183;
@@ -17,16 +19,17 @@ $color-primary: #bebc7e;
 $text-color-light:  rgba( $color-light, .7 );
 $text-color-dark: rgba( $color-dark, .7 );
 $text-color-medium: $color-gray-1;
+$text-color-primary: $color-primary;
 
 
 // Typography
 // ============================================
-$font-size-base: 0.875rem !default;
-$font-size-regular: 1rem !default;
+$font-size-base: 1rem !default;  // 16px
+$font-size-regular: 0.9375rem !default;  // 15px
 
 // Utility
 // ============================================
-$space: 0.625rem !default;
+$space: 0.625rem !default;  // 10px
 
 $spaces: (
   xxs: $space / 3,
@@ -41,6 +44,17 @@ $spaces: (
 // Border
 // ============================================
 $border-color: $color-gray-2;
+
+
+// Background
+// ============================================
+$bg-color-primary: $color-primary;
+$bg-color-light: $color-lighter;
+
+
+// header
+// ============================================
+$header-font-size: $font-size-regular;
 
 // Forms
 // ============================================
