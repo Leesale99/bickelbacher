@@ -1,0 +1,42 @@
+.topics {
+  border-top: 1px solid $border-color;
+  max-width: $space * 30;
+  margin: 0 auto;
+  padding: space(2) 0;
+
+  @include media-breakpoint-up(md) {
+    max-width: inherit;
+  };
+
+  @include media-breakpoint-up(lg) {
+    border: none;
+    padding: space(1) 0;
+  };
+
+
+  & > h3 {
+    font-size: $font-size-medium-2;
+    color: $color-dark;
+    font-weight: 700;
+    margin-bottom: space(1);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    border-radius: 5px;
+    margin-bottom: space(1);
+    background-color: $bg-color-primary;
+    border: 1px solid $border-color;
+    padding: space(-2) space(1);
+    margin-right: space(1);
+    color: $color-light;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

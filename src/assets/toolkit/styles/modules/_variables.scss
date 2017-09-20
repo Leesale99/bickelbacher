@@ -13,21 +13,27 @@ $color-lighter: #f8f9fa;
 $color-gray-1: #747474;
 $color-gray-2: #979797;
 $color-gray-3: #939183;
+$color-gray-4: #eeeeee;
+$color-gray-5: #d8d8d8;
 $color-primary: #bebc7e;
 $color-darker: #282828;
+$color-dark-red: #750000;
+$color-darker-red: #6e0000;
 
 // Text Colors
 $text-color-light:  rgba( $color-light, .7 );
 $text-color-dark: rgba( $color-dark, .7 );
 $text-color-medium: $color-gray-1;
 $text-color-primary: $color-primary;
+$text-color-info: $color-dark-red;
 
 
 // Typography
 // ============================================
-$font-size-base: 1rem !default;  // 16px
+$font-size-base: 0.875rem;  // 14px
 $font-size-regular: 0.9375rem !default;  // 15px
-$font-size-small: 0.875rem !default;  // 14px
+$font-size-medium: 1rem !default;  // 16px
+$font-size-medium-2: 1.125rem;  // 18px
 
 // Utility
 // ============================================
@@ -46,6 +52,7 @@ $spaces: (
 // Border
 // ============================================
 $border-color: $color-gray-2;
+$border-color-light: $color-gray-4;
 
 
 // Background
@@ -53,6 +60,8 @@ $border-color: $color-gray-2;
 $bg-color-primary: $color-primary;
 $bg-color-light: $color-lighter;
 $bg-color-dark: $color-darker;
+$bg-color-gray: $color-gray-5;
+$bg-color-red: $color-darker-red;
 
 
 // Header
@@ -61,12 +70,12 @@ $header-font-size: $font-size-regular;
 
 // Footer
 // ============================================
-$footer-font-size: $font-size-small;
+$footer-font-size:$font-size-base;
 
 // Forms
 // ============================================
 $input-text-color: $text-color-medium;
-$input-font-size: $font-size-regular;
+$input-font-size: $font-size-medium;
 $input-height: 2.813em;
-$input-background: $color-light;
-$input-background-dark: $color-gray-3;
+$input-bg-light: $color-light;
+$input-bg-dark: $color-gray-3;
