@@ -1,0 +1,15 @@
+.product {
+  &__body {
+    padding: space(1.5) space(1);
+  }
+
+  &__title {
+    font-size: $font-size-medium-2;
+    font-weight: 700;
+
+    & > span {
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+}
