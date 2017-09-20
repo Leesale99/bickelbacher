@@ -14,6 +14,7 @@ $color-gray-1: #747474;
 $color-gray-2: #979797;
 $color-gray-3: #939183;
 $color-primary: #bebc7e;
+$color-darker: #282828;
 
 // Text Colors
 $text-color-light:  rgba( $color-light, .7 );
@@ -26,19 +27,20 @@ $text-color-primary: $color-primary;
 // ============================================
 $font-size-base: 1rem !default;  // 16px
 $font-size-regular: 0.9375rem !default;  // 15px
+$font-size-small: 0.875rem !default;  // 14px
 
 // Utility
 // ============================================
 $space: 0.625rem !default;  // 10px
 
 $spaces: (
-  xxs: $space / 3,
-  xs: $space / 2,
-  sm: $space / 1.5,
-  md: $space,
-  lg: $space * 1.5,
-  xl: $space * 2,
-  xxl: $space * 3
+  -3: $space / 3,
+  -2: $space / 2,
+  -1.5: $space / 1.5,
+  1: $space,
+  1.5: $space * 1.5,
+  2: $space * 2,
+  3: $space * 3
 );
 
 // Border
@@ -50,11 +52,16 @@ $border-color: $color-gray-2;
 // ============================================
 $bg-color-primary: $color-primary;
 $bg-color-light: $color-lighter;
+$bg-color-dark: $color-darker;
 
 
-// header
+// Header
 // ============================================
 $header-font-size: $font-size-regular;
+
+// Footer
+// ============================================
+$footer-font-size: $font-size-small;
 
 // Forms
 // ============================================

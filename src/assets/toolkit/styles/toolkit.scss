@@ -12,6 +12,7 @@
 // Layouts
 @import './layouts/base';
 @import './layouts/header';
+@import './layouts/footer';
 @import './layouts/secondary-nav';
 // Components
 @import './components/cart-button';
@@ -19,3 +20,5 @@
 @import './components/text-input';
 @import './components/search';
 @import './components/breadcrumbs.scss';
+@import './components/footer-nav';
+@import './components/social';

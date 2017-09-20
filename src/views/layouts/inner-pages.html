@@ -19,7 +19,7 @@
 
 	<!-- Icons Sprite -->
 	{{> icons}}
-	<!-- /Icon Sprite -->
+	<!-- /Icons Sprite -->
 
 	<!-- Header -->
 	<header class="header">
@@ -85,19 +85,125 @@
 			</button>
 		</nav>
 	</header>
+	<!-- /Header -->
 	<!-- Secondary Navigation -->
-	<nav class="secondary-nav">
+	<aside class="secondary-nav">
 		<ul class="breadcrumbs">
 			<li class="breadcrumbs__item"><a href="#">Startseite</a></li>
 			<li class="breadcrumbs__item"><a href="#">Shop</a></li>
 			<li class="breadcrumbs__item"><a href="#">Bouillon & Brühen</a></li>
 			<li class="breadcrumbs__item--active"><span>Bouillon Rind</span></li>
 		</ul>
-	</nav>
+	</aside>
 	<!-- Secondary Navigation -->
-	<!-- /Header -->
 
-	{% body %}
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<main>
+					{% body %}
+				</main>
+			</div>
+			<div class="col-md-3">
+				<aside class="sidebar">
+					<h2>Bickelbacher Aktuell</h2>
+					<p>Nützliche Infos rund um unsere Produkte</p>
+					<article class="info">
+						<img class="info__img" src="" alt="">
+						<div class="info__body">
+							<h3>Deftige Eintöpfe mit  Hickory- Steinsalz</h3>
+							<p>Zum Beispiel das Hickory Smoke genial für die vegane Küche ist und soweiter.</p>
+						</div>
+						<button type="button">ALLE THEMEN ANSEHEN</button>
+					</article>
+					<article class="subscribe">
+						<form action="" method="">
+							<header class="subscribe__header">
+								<h3>Bleiben Sie Informiert.</h3>
+								<p>MIT UNSEREM NEWSLETTER, INFORMIEREN SIE RUND UM DAS THEMA GESUNDE ERNÄRHUNG UND RAFFINIERTES KOCHEN.</p>
+							</header>
+							<footer class="subscribe__footer">
+								<button type="submit">Jetzt Anmelden</button>
+								<p>Durch die Erstellung eines Kontos bestätgst du, dass du mit den <strong>AGB von Bickelbacher.com, unseren Datenschutzrichtlinien</strong> und der <strong>Verwendung von Cookies</strong> einverstanden bidt</p>
+							</footer>
+						</form>
+					</article>
+					<article class="topics">
+					<span class="topics__label">Vegan</span>
+					<span class="topics__label">Bio</span>
+					<span class="topics__label">Laktose Frei</span>
+					<span class="topics__label">Grillen</span>
+					<span class="topics__label">Eintopf</span>
+					<span class="topics__label"></span>
+					<span class="topics__label">Suppen</span>
+					<span class="topics__label">Cup of Soup</span>
+					<span class="topics__label">Kinder mahlzeit</span>
+					</article>
+				</aside>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-nav">
+								<h3 class="footer-nav__title">CUSTOMER SERVICE</h3>
+								<ul>
+									<li class="footer-nav__item"><a href="#">Contact Us</a></li>
+									<li class="footer-nav__item"><a href="#">Returns & Exchange</a></li>
+									<li class="footer-nav__item"><a href="#">FAQ</a></li>
+									<li class="footer-nav__item"><a href="#">International FAQ</a></li>
+									<li class="footer-nav__item"><a href="#">Warranty</a></li>
+									<li class="footer-nav__item"><a href="#">Sitemap</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-nav">
+								<h3 class="footer-nav__title">CORPORATE</h3>
+								<ul>
+									<li class="footer-nav__item"><a href="#">Corporate & Uniform</a></li>
+									<li class="footer-nav__item"><a href="#">Sales</a></li>
+									<li class="footer-nav__item"><a href="#">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-nav">
+								<h3 class="footer-nav__title">LEGAL</h3>
+								<ul>
+									<li class="footer-nav__item"><a href="#">Privacy Policy</a></li>
+									<li class="footer-nav__item"><a href="#">Terms & Conditions</a></li>
+									<li class="footer-nav__item"><a href="#">California Transparency</a></li>
+									<li class="footer-nav__item"><a href="#">Act</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<ul class="social">
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li>
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li>
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#instagram"></use></svg></a></li>
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#youtube"></use></svg></a></li>
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#vimeo"></use></svg></a></li>
+								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#pinterest-p"></use></svg></a></li>
+							</ul>
+							<button class="login-btn" type="button">HANDLER LOGIN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /Footer -->
 
 	<!-- toolkit scripts -->
 	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/scripts/toolkit.js"></script>

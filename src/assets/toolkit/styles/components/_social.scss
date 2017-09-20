@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+
+  &__icon {
+
+    & > a {
+      display: flex;
+      align-items: center;
+      width: 1.715em;
+      height: 1.715em;
+      border-radius: 50%;
+      background-color: $color-gray-2;
+      transition: background-color 0.25s liner;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+
+      &:before {
+        content: none;
+      }
+    }
+
+    .icon {
+      width: 100%;
+
+      // color: inherit;
+    }
+
+    & + .social__icon {
+      margin-left: space(-2);
+    }
+  }
+}

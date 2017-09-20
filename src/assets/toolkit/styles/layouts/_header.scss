@@ -6,18 +6,16 @@
 }
 
 .top-bar {
+  @extend %wrapper;
   position: relative;
   display: none;
-  padding: 0.666em 1.666em;
+  padding-top: space(1);
+  padding-bottom: space(1);
   background-color: $color-dark;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   @include media-breakpoint-up(md) {
     display: flex;
     justify-content: space-between;
-  }
-
-  @include media-breakpoint-up(xl) {
-    padding: 0.666em 2em;
   }
 
   &__text {
@@ -47,21 +45,21 @@
 }
 
 .main-bar {
+  @extend %wrapper;
   display: flex;
   flex-wrap: wrap;
   align-items: start;
   justify-content: space-between;
-  padding: 0.666em 1.333em;
+  padding-top: space(1);
+  padding-bottom: space(1);
   @include media-breakpoint-up(md) {
-    padding: 1.333em 1.666em;
+    padding-top: space(2);
+    padding-bottom: space(2);
   }
   @include media-breakpoint-up(lg) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-  }
-  @include media-breakpoint-up(xl) {
-    padding: 1.333em 2em;
   }
 
   &--primary {
