@@ -1,7 +1,9 @@
 .select {
+  margin: 0 auto;
   position: relative;
   height: 2.857em;
   width: 100%;
+  max-width: $space * 30;
   border: 1px solid $border-color;
   background-color: $color-light;
 
@@ -35,9 +37,10 @@
     width: calc(100% + 2px);
     cursor: pointer;
     border: 1px solid $border-color;
-    border-top: none;
     left: -1px;
     padding: space(-2) 0;
+    z-index: 1;
+    background-color: $color-light;
 
     & > li {
       display: block;

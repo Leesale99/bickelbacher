@@ -91,6 +91,18 @@ button {
 .caption {
   margin-bottom: space(1.5);
 
+  &--main {
+    @extend .caption;
+
+    .caption__subtitle,
+    .caption__title {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+  }
+
   &__title {
     font-weight: 700;
     color: $color-dark;
@@ -104,7 +116,9 @@ button {
 }
 
 .main-content {
-  margin-top: space(2);
+  @include media-breakpoint-up(lg) {
+    margin-top: space(2);
+  }
 }
 
 .sidebar {
