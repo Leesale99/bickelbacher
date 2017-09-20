@@ -1,0 +1,21 @@
+.footer-nav {
+
+  & + .footer-nav {
+    margin-top: space(1.5);
+  }
+
+  &__title {
+    color: inherit;
+    font-size: inherit;
+    margin-bottom: 0.25em;
+    font-weight: 700;
+  }
+
+  &__item {
+
+    & > a {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+}

@@ -79,3 +79,7 @@ button {
   stroke: currentColor;
   fill: currentColor;
 }
+
+.wrapper {
+  @extend %wrapper;
+}
