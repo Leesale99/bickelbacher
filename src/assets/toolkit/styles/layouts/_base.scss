@@ -83,3 +83,30 @@ button {
 .wrapper {
   @extend %wrapper;
 }
+
+
+.text-strong {
+  color: $color-dark-red;
+}
+
+.caption {
+  margin-bottom: space(1.5);
+
+  &__title {
+    font-weight: 700;
+    color: $color-dark;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $color-dark;
+  }
+}
+
+.sidebar {
+
+  .info, .subscribe, .topics {
+   margin-top: space(2);
+ }
+}

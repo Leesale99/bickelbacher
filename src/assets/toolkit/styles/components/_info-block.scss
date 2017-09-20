@@ -1,0 +1,28 @@
+.info {
+    max-width: $space * 30;
+    margin: 0 auto;
+
+  border: solid 1px $border-color-light;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__body {
+    padding: space(2) space(1.5);
+    text-align: center;
+    h3 {
+      font-size: 1.286em;
+      font-weight: bold;
+      color: $color-dark;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    font-size: 1.145em;
+    font-weight: 700;
+    padding: 1em;
+    background-color: $bg-color-primary;
+  }
+}
