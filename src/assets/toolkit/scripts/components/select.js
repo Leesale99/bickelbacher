@@ -1,40 +1,31 @@
 import $ from 'jquery';
 
-$.fn.madCustomSelect = function () {
+$.fn.madCustomSelect = function() {
 
-  return this.each(function () {
+  return this.each(function() {
 
-    const list = $(this).children('ul'),
-      select = $(this).find('select'),
-      title = $(this).find('.select-title');
+    const select = $(this).find('select'),
+      title = $(this).children('.select__title'),
+      list = $(this).children('.select__list');
 
     // select items to list items
-
-    if ($(this).find('[data-filter]').length) {
-      for (let i = 0, len = select.children('option').length; i < len; i++) {
-        list.append('<li data-filter="' + select.children('option').eq(i).data('filter') + '">' + select.children('option').eq(i).text() + '</li>')
-      }
-    } else {
-      for (let i = 0, len = select.children('option').length; i < len; i++) {
-        list.append('<li>' + select.children('option').eq(i).text() + '</li>');
-      }
+    for (let i = 0, len = select.children('option').length; i < len; i++) {
+      list.append('<li data-value="' + select.children('option').eq(i).val() + '">' + select.children('option').eq(i).text() + '</li>');
     }
-    select.hide();
 
     // open list
-
-    title.on('click', function () {
-      list.slideToggle(400);
+    title.on('click', function() {
+      list.toggle();
       $(this).toggleClass('active');
     });
 
     // selected option
-
-    list.on('click', 'li', function () {
-      const val = $(this).text();
-      title.text(val);
-      list.slideUp(400);
-      select.val(val);
+    list.on('click', 'li', function() {
+      const val = $(this).data('value'),
+        text = $(this).text();
+      title.text(text);
+      list.toggle();
+      select.val(val ? val : text);
       title.toggleClass('active');
       return false;
     });
@@ -43,6 +34,10 @@ $.fn.madCustomSelect = function () {
 
 };
 
-if ($('.custom-select').length) {
-  $('.custom-select').madCustomSelect();
-}
+(function() {
+  'use strict';
+
+  if ($('.select').length) {
+    $('.select').madCustomSelect();
+  }
+}());

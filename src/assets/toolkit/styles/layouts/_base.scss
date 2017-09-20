@@ -84,7 +84,6 @@ button {
   @extend %wrapper;
 }
 
-
 .text-strong {
   color: $color-dark-red;
 }
@@ -104,9 +103,17 @@ button {
   }
 }
 
-.sidebar {
+.main-content {
+  margin-top: space(2);
+}
 
-  .info, .subscribe, .topics {
-   margin-top: space(2);
- }
+.sidebar {
+  margin-top: space(2);
+
+  .subscribe,
+  .topics {
+    @include media-breakpoint-up(lg) {
+      margin-top: space(2);
+    }
+  }
 }

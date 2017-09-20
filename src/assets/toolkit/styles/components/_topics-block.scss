@@ -1,7 +1,7 @@
 .topics {
   border-top: 1px solid $border-color;
   max-width: $space * 30;
-  margin: 0 auto;
+  margin: space(2) auto 0;
   padding: space(2) 0;
 
   @include media-breakpoint-up(md) {

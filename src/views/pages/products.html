@@ -3,10 +3,29 @@ layout: inner-pages
 title: My Custom Layout
 ---
 
-<h1>Hello, Products!</h1>
+<div class="products">
+  <div class="row">
+    <div class="col-12">
+      <header class="caption">
+        <div class="row">
+          <div class="col-lg-6 col-xl-4">
+            <h2 class="caption__title">Shop</h2>
+            <p class="caption__subtitle">Es werden alle Produkte für Sie angezeigt</p>
+          </div>
+          <div class="col-lg-6 col-xl-4 align-self-end">
+            <div class="select">
+              <div class="select__title">Nach Durchschnittsbewertung sortieren</div>
+              <ul id="menu-type" class="select__list"></ul>
+              <select>
+                <option value="value-1">Option 1</option>
+                <option value="value-2">Option 2</option>
+                <option value="value-3">Option 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
 
-{{> button title='go to the beginning'}}
-
-<div>
-	{{> table}}
+      </header>
+    </div>
+  </div>
 </div>
