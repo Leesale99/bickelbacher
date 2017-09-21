@@ -21,7 +21,15 @@ $color-dark-red: #750000;
 $color-darker-red: #6e0000;
 
 // Category Colors
-$category-color-blue: #3a799c;
+$categoryColors: (
+  natural: #3a799c,
+  kräuter: #007f2a,
+  hickory: #713500,
+  rind: #510607,
+  huhn: #ac5c00,
+  mediterrane: #003e0b
+);
+
 
 // Text Colors
 $text-color-light:  rgba( $color-light, .7 );

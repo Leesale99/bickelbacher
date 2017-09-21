@@ -89,7 +89,12 @@ button {
 }
 
 .caption {
-  margin-bottom: space(1.5);
+  margin-bottom: space(2);
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
 
   &--main {
     @extend .caption;

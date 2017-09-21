@@ -1,7 +1,20 @@
 <h1>Hello, World!</h1>
 
-{{> paragraph}}
 
+
+{{> paragraph}}
 <div>
-	{{> form}}
+
+	{{#each home.buttons}}
+
+	{{> button }}
+
+	{{/each}}
+</div>
+<div>
+	{{#each products}}
+
+	{{> product }}
+
+	{{/each}}
 </div>

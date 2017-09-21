@@ -1,0 +1,47 @@
+
+
+<article class="product{{#if category}}--{{ category }}{{/if}}">
+  <img class="product__img" src="{{#if image}}{{ image }}{{else}}../assets/toolkit/images/salz_streuer.jpg{{/if}}" alt="product image">
+  <div class="product__body">
+    <header>
+      <h3 class="product__title">{{#if title}}{{ title }}{{else}}steinsalz{{/if}} <span class="product__category">{{#if category}}{{ category }}{{else}}natural{{/if}}</span></h3>
+      <p class="product__subtitle">{{#if subtitle}}{{ subtitle }}{{else}}Hier ein Claim in Farbe{{/if}}</p>
+    </header>
+    <div class="product__description">
+      {{#if description}}{{ description }}{{else}}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.{{/if}}
+    </div>
+    <ul class="product__labels">
+    {{#if labels}}
+      {{#each labels}}
+        <li class="product__label"><svg class="icon"><use xlink:href="#{{label}}_icon"></use></svg></li>
+      {{/each}}
+    {{else}}
+      <li class="product__label"><svg class="icon"><use xlink:href="#bio_icon"></use></svg></li>
+      <li class="product__label"><svg class="icon"><use xlink:href="#gluten_icon"></use></svg></li>
+      <li class="product__label"><svg class="icon"><use xlink:href="#hefe_icon"></use></svg></li>
+      <li class="product__label"><svg class="icon"><use xlink:href="#laktose_icon"></use></svg></li>
+      <li class="product__label"><svg class="icon"><use xlink:href="#vegan_icon"></use></svg></li>
+      <li class="product__label"><svg class="icon"><use xlink:href="#vegetarisch_icon"></use></svg></li>
+    {{/if}}
+    </ul>
+    <div class="product__info">
+      <a class="product__info-btn" href="#{{#if title}}{{title}}-{{category}}{{/if}}"><svg class="icon"><use xlink:href="#info_button"></use></svg></a>
+      <ul class="product__meta">
+        <li class="product__meta-data--lead">Ab 2,89 €</li>
+        <li class="product__meta-data">(2,41€ / 100g)</li>
+        <li class="product__meta-data">INKL: 7% MWST:</li>
+        <li class="product__meta-data">Lieferzeit 5-6 Werktage</li>
+      </ul>
+    </div>
+    <footer class="product__rating">
+      <p>Bewertung:</p>
+      <span>
+        <svg class="icon"><use xlink:href="#star"></use></svg>
+        <svg class="icon"><use xlink:href="#star"></use></svg>
+        <svg class="icon"><use xlink:href="#star"></use></svg>
+        <svg class="icon"><use xlink:href="#star"></use></svg>
+        <svg class="icon"><use xlink:href="#star"></use></svg>
+      </span>
+    </footer>
+  </div>
+</article>

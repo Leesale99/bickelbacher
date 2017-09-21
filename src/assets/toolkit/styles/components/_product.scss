@@ -2,6 +2,10 @@
   max-width: $space * 30;
   border: 1px solid $border-color-light;
 
+  &__img {
+    width: 100%;
+  }
+
   &__body {
     padding: space(1.5) space(1);
   }
@@ -11,11 +15,12 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
+  }
 
-    & > span {
-      font-weight: normal;
-      font-style: italic;
-    }
+  &__category {
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
   }
 
   &__subtitle {
@@ -35,7 +40,7 @@
 
   &__label {
     display: inline-flex;
-    margin-right: space(-1.5);
+    margin-right: space(-3);
 
     & > .icon {
       width: $space * 3.5;
@@ -96,5 +101,12 @@
         vertical-align: middle;
       }
     }
+  }
+}
+
+.products-grid {
+  .product {
+    margin: 0 auto;
+    width: 100%;
   }
 }
