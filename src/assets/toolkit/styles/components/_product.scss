@@ -6,10 +6,15 @@
   &__title {
     font-size: $font-size-medium-2;
     font-weight: 700;
+    text-transform: uppercase;
 
     & > span {
       font-weight: normal;
       font-style: italic;
     }
+  }
+
+  &__subtitle {
+    font-size: $font-size-medium;
   }
 }
