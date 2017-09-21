@@ -12,3 +12,28 @@
 
   @return null;
 }
+
+@mixin productStyles($name, $color) {
+
+    .product {
+
+      &--#{$name} {
+        @extend .product;
+
+        .product {
+
+          &__category {
+            color: #{$color};
+          }
+
+          &__subtitle {
+            color: #{$color};
+          }
+        }
+      }
+    }
+}
+
+@each $name, $color in $categoryColors {
+  @include productStyles($name, $color);
+}

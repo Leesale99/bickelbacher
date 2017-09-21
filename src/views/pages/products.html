@@ -1,6 +1,7 @@
 ---
 layout: inner-pages
 title: My Custom Layout
+basepath: ..
 ---
 
 <div class="products">
@@ -15,7 +16,7 @@ title: My Custom Layout
           <div class="col-lg-6 col-xl-4 align-self-end">
             <div class="select">
               <div class="select__title">Nach Durchschnittsbewertung sortieren</div>
-              <ul id="menu-type" class="select__list"></ul>
+              <ul class="select__list"></ul>
               <select>
                 <option value="value-1">Option 1</option>
                 <option value="value-2">Option 2</option>
@@ -27,47 +28,11 @@ title: My Custom Layout
       </header>
       <section class="products-grid">
         <div class="row">
-          <div class="col">
-            <article class="product">
-              <img class="product__img" src="../assets/toolkit/images/salz_streuer.jpg" alt="product image">
-              <div class="product__body">
-                <header>
-                  <h3 class="product__title">STEINSALZ <span class="category-color">NATURAL</span></h3>
-                  <p class="product__subtitle category-color">Hier ein Claim in Farbe</p>
-                </header>
-                <div class="product__description">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                </div>
-                <ul class="product__labels">
-                  <li class="product__label"><svg class="icon"><use xlink:href="#bio_icon"></use></svg></li>
-                  <li class="product__label"><svg class="icon"><use xlink:href="#gluten_icon"></use></svg></li>
-                  <li class="product__label"><svg class="icon"><use xlink:href="#hefe_icon"></use></svg></li>
-                  <li class="product__label"><svg class="icon"><use xlink:href="#laktose_icon"></use></svg></li>
-                  <li class="product__label"><svg class="icon"><use xlink:href="#vegan_icon"></use></svg></li>
-                  <li class="product__label"><svg class="icon"><use xlink:href="#vegetarisch_icon"></use></svg></li>
-                </ul>
-                <div class="product__info">
-                  <a class="product__info-btn" href="#"><svg class="icon"><use xlink:href="#info_button"></use></svg></a>
-                  <ul class="product__meta">
-                    <li class="product__meta-data--lead">Ab 2,89 €</li>
-                    <li class="product__meta-data">(2,41€ / 100g)</li>
-                    <li class="product__meta-data">INKL: 7% MWST:</li>
-                    <li class="product__meta-data">Lieferzeit 5-6 Werktage</li>
-                  </ul>
-                </div>
-                <footer class="product__rating">
-                  <p>Bewertung:</p>
-                  <span>
-                    <svg class="icon"><use xlink:href="#star"></use></svg>
-                    <svg class="icon"><use xlink:href="#star"></use></svg>
-                    <svg class="icon"><use xlink:href="#star"></use></svg>
-                    <svg class="icon"><use xlink:href="#star"></use></svg>
-                    <svg class="icon"><use xlink:href="#star"></use></svg>
-                  </span>
-                </footer>
+            {{#each products}}
+              <div class="col-md-6 col-xl-4">
+                {{> product }}
               </div>
-            </article>
-          </div>
+            {{/each}}
         </div>
       </section>
     </div>

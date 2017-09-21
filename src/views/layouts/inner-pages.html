@@ -90,7 +90,7 @@
 	<aside class="secondary-nav">
 		<ul class="breadcrumbs">
 			<li class="breadcrumbs__item"><a href="#">Startseite</a></li>
-			<li class="breadcrumbs__item"><a href="#">Shop</a></li>
+			<li class="breadcrumbs__item--active"><span>Shop</span></li>
 			<!-- <li class="breadcrumbs__item"><a href="#">Bouillon & Brühen</a></li>
 			<li class="breadcrumbs__item--active"><span>Bouillon Rind</span></li> -->
 		</ul>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="col-md-6 col-lg-12">
 							<article class="info">
-								<img class="info__img" src="../assets/toolkit/images/gemuese_glass.jpg" alt="placeholder">
+								<img class="info__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/gemuese_glass.jpg" alt="placeholder">
 								<div class="info__body">
 									<h3>Deftige Eintöpfe mit<br>Hickory- Steinsalz</h3>
 									<p>Zum Beispiel das Hickory Smoke genial für die vegane Küche ist und soweiter.</p>

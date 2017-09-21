@@ -1,3 +1,13 @@
 {
-  "title": "Hello!!!"
+  "buttons": [
+    {
+      "title": "Hello!!!",
+    },
+    {
+      "title": "Aloha!!!"
+    },
+    {
+      "title": "Zdravo!!!"
+    }
+  ]
 }
