@@ -1,4 +1,7 @@
 .product {
+  max-width: $space * 30;
+  border: 1px solid $border-color-light;
+
   &__body {
     padding: space(1.5) space(1);
   }
@@ -7,6 +10,7 @@
     font-size: $font-size-medium-2;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 0;
 
     & > span {
       font-weight: normal;
@@ -16,5 +20,81 @@
 
   &__subtitle {
     font-size: $font-size-medium;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    line-height: 1;
+    padding: space(1) space(1) space(1) 0;
+  }
+
+  &__labels {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    display: inline-flex;
+    margin-right: space(-1.5);
+
+    & > .icon {
+      width: $space * 3.5;
+      height: $space * 3.5;
+    }
+  }
+
+  &__info {
+    display: flex;
+    padding: space(2) 0 space(1);
+
+    &-btn {
+      color: $color-dark;
+      margin-right: space(1.5);
+
+      &:before {
+        content: none;
+      }
+
+      :hover {
+        color: $bg-color-primary;
+      }
+
+      & > .icon {
+        width: $space * 7;
+        height: $space * 7;
+      }
+    }
+  }
+
+  &__meta {
+    &-data {
+      color: $color-dark;
+      line-height: 1.25;
+
+      &--lead {
+        @extend .product__meta-data;
+        font-size: $font-size-medium-3;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__rating {
+    & > p {
+      display: inline;
+      font-size: $font-size-medium-3;
+      font-weight: 500;
+      color: $color-dark;
+    }
+
+    & > span {
+      font-size: $font-size-medium-3;
+      color: $bg-color-primary;
+      margin-left: space(-3);
+
+      & > .icon {
+        vertical-align: middle;
+      }
+    }
   }
 }
