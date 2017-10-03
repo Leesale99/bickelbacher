@@ -1,6 +1,7 @@
 /**
  * Header
  */
+
 .header {
   font-size: $header-font-size;
 }
@@ -23,6 +24,7 @@
     font-weight: 500;
 
     & > a {
+      @extend %underline;
       color: $text-color-light;
     }
   }
@@ -38,6 +40,7 @@
       }
 
       & > a {
+        @extend %underline;
         color: $text-color-light;
       }
     }
@@ -71,6 +74,17 @@
     display: inline-block;
     line-height: inherit;
     white-space: nowrap;
+    display: flex;
+
+    & > .icon {
+      width: 13.5em;
+      height: 2.5em;
+
+      @include media-breakpoint-up(md) {
+        width: 17em;
+        height: 3em;
+      }
+    }
   }
 
 

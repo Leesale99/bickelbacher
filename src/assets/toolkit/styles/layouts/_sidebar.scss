@@ -1,0 +1,19 @@
+.sidebar {
+  margin-top: space(2);
+
+  .info {
+    margin-bottom: space(2);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .subscribe,
+  .topics {
+    @include media-breakpoint-up(lg) {
+      margin-top: space(2);
+    }
+  }
+}

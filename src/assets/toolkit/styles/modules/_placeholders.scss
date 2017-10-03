@@ -1,17 +1,49 @@
 
-// Header menu toggler btn
+// Custom Container
 %wrapper {
   width: 100%;
-  padding-left: space(2);
-  padding-right: space(2);
-
+  padding-left: space(1.5);
+  padding-right: space(1.5);
   @include media-breakpoint-up(md) {
-    padding-left: $space * 2.5;
-    padding-right: $space * 2.5;
+    padding-left: space(2.5);
+    padding-right: space(2.5);
   }
-
   @include media-breakpoint-up(xl) {
     padding-left: space(3);
     padding-right: space(3);
+  }
+}
+
+// Uderline Animation for Ancor Element
+%underline {
+  position: relative;
+
+  &:hover {
+    outline: none;
+    text-decoration: none;
+    transition: all 0.35s ease;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    -webkit-transition-property: width;
+    transition-property: width;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit;
+    transition-duration: inherit;
   }
 }

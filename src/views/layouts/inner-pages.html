@@ -39,7 +39,7 @@
 					<span class="menu-btn__bar"></span>
 				</div>
 			</button>
-			<a class="logo" href="#">Bichelbacker</a>
+			<a class="logo" href="#"><svg class="icon"><use xlink:href="#logo"></use></svg></a>
 			<div class="main-menu" id="main-menu">
 				<div class="search">
 					<input class="search__field" type="text" placeholder="Search" aria-label="Search">
@@ -48,7 +48,7 @@
 				<ul class="main-nav">
 					<li class="main-nav__item--has-subnav">
 						<div class="main-nav__link">
-							<a href="#">PRODUKTE</a>
+							<a href="#">Produkte</a>
 							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
 						</div>
 						<ul class="sub-nav">
@@ -59,7 +59,7 @@
 					</li>
 					<li class="main-nav__item--has-subnav">
 						<div class="main-nav__link">
-							<a href="#">ÜBER BICKELBACHER</a>
+							<a href="#">Über Bickelbacher</a>
 							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
 						</div>
 						<ul class="sub-nav">
@@ -69,16 +69,49 @@
 							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
 						</ul>
 					</li>
-					<li class="main-nav__item">
+					<li class="main-nav__item--has-subnav">
 						<div class="main-nav__link">
-							<a href="#">SHOP</a>
+							<a href="#">Shop</a>
 							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
 						</div>
+						<ul class="sub-nav">
+							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item mobile-only">
+						<div class="main-nav__link">
+							<a href="#">Login</a>
+						</div>
+					</li>
+					<li class="main-nav__item mobile-only">
+						<div class="main-nav__link">
+							<a href="#">AGB</a>
+						</div>
+					</li>
+					<li class="main-nav__item mobile-only">
+						<div class="main-nav__link">
+							<a href="#">Newletter Anmelden</a>
+						</div>
+					</li>
+					<li class="main-nav__item--has-subnav mobile-only">
+						<div class="main-nav__link">
+							<a href="#">Mobile Only with Submenu</a>
+							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+						</div>
+						<ul class="sub-nav">
+							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
+						</ul>
 					</li>
 				</ul>
 			</div>
 			<button class="cart-btn" type="button">
-				<svg class="cart-btn__icon icon"><use xlink:href="#cart_button"></use></svg>
+				<svg class="cart-btn__icon icon"><use xlink:href="#shopping-cart"></use></svg>
 				<p class="cart-btn__label">
 					(<span class="count">0</span>) Artikel - <span class="price">0.00</span>
 				</p>
@@ -171,7 +204,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col"></div>
+				<div class="col">
+					<svg class="footer-logo icon"><use xlink:href="#signature-logo"></use></svg>
+				</div>
 				<div class="col-sm-9">
 					<div class="row">
 						<div class="col-sm-6 col-lg-3">

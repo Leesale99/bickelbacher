@@ -1,0 +1,31 @@
+.caption {
+  margin-bottom: space(2);
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+
+  &--main {
+    @extend .caption;
+
+    .caption__subtitle,
+    .caption__title {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $color-dark;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $color-dark;
+  }
+}
