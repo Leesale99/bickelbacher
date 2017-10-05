@@ -1,6 +1,15 @@
 .product {
+  display: block;
   max-width: $space * 30;
   border: 1px solid $border-color-light;
+
+  &:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+
+    .product__info-btn {
+        color: $bg-color-primary;
+    }
+  }
 
   &__img {
     width: 100%;
@@ -10,59 +19,41 @@
     padding: space(1.5) space(1);
   }
 
-  &__title {
+  &__category {
     font-size: $font-size-medium-2;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
   }
 
-  &__category {
+  &__type {
     font-weight: normal;
     font-style: italic;
     text-transform: uppercase;
   }
 
-  &__subtitle {
+  &__title {
     font-size: $font-size-medium;
     margin-bottom: 0;
   }
 
   &__description {
     line-height: 1;
-    padding: space(1) space(1) space(1) 0;
+    padding: space(1) 0;
   }
 
   &__labels {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  &__label {
-    display: inline-flex;
-    margin-right: space(-3);
-
-    & > .icon {
-      width: $space * 3.5;
-      height: $space * 3.5;
-    }
+    padding-bottom: space(-1.5);
   }
 
   &__info {
     display: flex;
-    padding: space(2) 0 space(1);
+    padding: space(1) 0;
 
     &-btn {
       color: $color-dark;
       margin-right: space(1.5);
-
-      &:before {
-        content: none;
-      }
-
-      :hover {
-        color: $bg-color-primary;
-      }
+      transition: color 0.35s ease;
 
       & > .icon {
         width: $space * 7;
@@ -92,14 +83,9 @@
       color: $color-dark;
     }
 
-    & > span {
+    & > .rating {
       font-size: $font-size-medium-3;
-      color: $bg-color-primary;
       margin-left: space(-3);
-
-      & > .icon {
-        vertical-align: middle;
-      }
     }
   }
 }
@@ -110,5 +96,34 @@
   .product {
     width: 100%;
     margin: 0 auto  $space * 4;
+
+    &-labels {
+
+      &__item {
+        @include media-breakpoint-up(xl) {
+          margin-right: space(-3);
+        }
+      }
+    }
+  }
+}
+
+
+.product-labels {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: inline-flex;
+    margin-right: space(-1.5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > .icon {
+      width: $space * 3.5;
+      height: $space * 3.5;
+    }
   }
 }

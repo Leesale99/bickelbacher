@@ -22,11 +22,11 @@
 
         .product {
 
-          &__category {
+          &__type {
             color: #{$color};
           }
 
-          &__subtitle {
+          &__title {
             color: #{$color};
           }
         }
@@ -34,6 +34,6 @@
     }
 }
 
-@each $name, $color in $categoryColors {
+@each $name, $color in $productColors {
   @include productStyles($name, $color);
 }

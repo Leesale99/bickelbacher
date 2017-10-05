@@ -1,21 +1,8 @@
 .caption {
-  margin-bottom: space(2);
+  margin-bottom: 1em;
   text-align: center;
-
   @include media-breakpoint-up(lg) {
     text-align: left;
-  }
-
-  &--main {
-    @extend .caption;
-
-    .caption__subtitle,
-    .caption__title {
-      display: none;
-      @include media-breakpoint-up(lg) {
-        display: block;
-      }
-    }
   }
 
   &__title {

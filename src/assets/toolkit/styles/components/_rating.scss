@@ -1,0 +1,15 @@
+.rating {
+
+  &__icon {
+    vertical-align: middle;
+    color: $bg-color-primary;
+    stroke-width: 1px;
+
+    &--empty {
+      @extend .rating__icon;
+      color: transparent;
+      stroke: $bg-color-primary;
+
+    }
+  }
+}

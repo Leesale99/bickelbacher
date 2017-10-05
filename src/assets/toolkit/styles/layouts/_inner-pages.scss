@@ -1,0 +1,35 @@
+.main-content {
+  @include media-breakpoint-up(lg) {
+    margin-top: space(2);
+  }
+}
+
+.products-header {
+  .caption {
+    @include media-breakpoint-down(md) {
+      margin: space(2) auto space(1);
+    }
+    &__subtitle,
+    &__title {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+
+    &__title--sm {
+      display: block;
+      margin: 0 auto;
+      color: $color-dark;
+      font-size: 2em;
+      font-weight: 500;
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+  }
+
+  .select {
+    margin: 0 auto space(2);
+  }
+}

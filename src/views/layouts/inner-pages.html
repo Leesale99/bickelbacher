@@ -119,86 +119,8 @@
 		</nav>
 	</header>
 	<!-- /Header -->
-	<!-- Secondary Navigation -->
-	<aside class="secondary-nav">
-		<ul class="breadcrumbs">
-			<li class="breadcrumbs__item"><a href="#">Startseite</a></li>
-			<li class="breadcrumbs__item--active"><span>Shop</span></li>
-			<!-- <li class="breadcrumbs__item"><a href="#">Bouillon & Brühen</a></li>
-			<li class="breadcrumbs__item--active"><span>Bouillon Rind</span></li> -->
-		</ul>
-	</aside>
-	<!-- Secondary Navigation -->
 
-	<div class="container">
-		<div class="row">
-
-			<!-- Main content column -->
-			<div class="col">
-				<main class="main-content">
-					{% body %}
-				</main>
-			</div>
-			<!-- /Main content column -->
-			<!-- Sidebar column -->
-			<div class="col-lg-4 col-xl-3">
-				<aside class="sidebar">
-					<div class="row">
-						<div class="col-12">
-							<header class="caption">
-								<h2 class="caption__title">Bickelbacher <span class="text-strong">Aktuell</span></h2>
-								<p class="caption__subtitle">Nützliche Infos rund um unsere Produkte</p>
-							</header>
-						</div>
-						<div class="col-md-6 col-lg-12">
-							<article class="info">
-								<img class="info__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/gemuese_glass.jpg" alt="placeholder">
-								<div class="info__body">
-									<h3>Deftige Eintöpfe mit<br>Hickory- Steinsalz</h3>
-									<p>Zum Beispiel das Hickory Smoke genial für die vegane Küche ist und soweiter.</p>
-								</div>
-								<button class="info__btn" type="button">ALLE THEMEN ANSEHEN</button>
-							</article>
-						</div>
-						<div class="col-md-6 col-lg-12">
-							<article class="subscribe">
-								<form action="" method="">
-									<header class="subscribe__header">
-										<h3>Bleiben Sie Informiert.</h3>
-										<p>MIT UNSEREM NEWSLETTER, INFORMIEREN SIE RUND UM DAS THEMA GESUNDE ERNÄRHUNG UND RAFFINIERTES KOCHEN.</p>
-										<input class="text-input" type="email" placeholder="E-Mail-Adresse">
-										<input class="text-input" type="password" placeholder="Passwort estellen">
-									</header>
-									<footer class="subscribe__footer">
-										<button type="submit">Jetzt Anmelden</button>
-										<p>Durch die Erstellung eines Kontos bestätgst du, dass du mit den <strong>AGB von Bickelbacher.com, unseren Datenschutzrichtlinien</strong> und der <strong>Verwendung von Cookies</strong> einverstanden bidt</p>
-									</footer>
-								</form>
-							</article>
-						</div>
-						<div class="col">
-							<article class="topics">
-								<h3>Bleliebte Themen</h3>
-								<ul class="topics__list">
-									<li class="topics__label">Vegan</li>
-									<li class="topics__label">Bio</li>
-									<li class="topics__label">Laktose Frei</li>
-									<li class="topics__label">Grillen</li>
-									<li class="topics__label">Eintopf</li>
-									<li class="topics__label">Suppen</li>
-									<li class="topics__label">Cup of Soup</li>
-									<li class="topics__label">Kinder mahlzeit</li>
-								</ul>
-							</article>
-						</div>
-					</div>
-				</aside>
-			</div>
-			<!-- /Sidebar column -->
-		</div>
-	</div>
-
-
+	{% body %}
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -207,7 +129,7 @@
 				<div class="col">
 					<svg class="footer-logo icon"><use xlink:href="#signature-logo"></use></svg>
 				</div>
-				<div class="col-sm-9">
+				<div class="col-md-7 col-lg-9">
 					<div class="row">
 						<div class="col-sm-6 col-lg-3">
 							<div class="footer-nav">

@@ -5,7 +5,7 @@ title: Shop
 
 <!-- Secondary Navigation -->
 <aside class="secondary-nav">
-  {{> breadcrumbs all-products.breadcrumbs}}
+  {{> breadcrumbs product-single.breadcrumbs}}
 </aside>
 <!-- /Secondary Navigation -->
 <div class="container">
@@ -13,29 +13,11 @@ title: Shop
     <!-- Main content column -->
     <div class="col">
       <main class="main-content">
-        <div class="products">
           <div class="row">
             <div class="col-12">
-              <div class="products-header row">
-                <div class="col-lg-6 col-xl-4">
-                  {{> caption all-products.caption_main}}
-                </div>
-                <div class="col-lg-6 col-xl-4 align-self-end">
-                  {{> select-field all-products.sort_by_rating}}
-                </div>
-              </div>
-              <section class="products-grid">
-                <div class="row">
-                    {{#each products}}
-                      <div class="col-md-6 col-xl-4">
-                        {{> product-card }}
-                      </div>
-                    {{/each}}
-                </div>
-              </section>
             </div>
           </div>
-        </div>
+
       </main>
     </div>
     <!-- /Main content column -->
@@ -91,6 +73,5 @@ title: Shop
       </aside>
     </div>
     <!-- /Sidebar column -->
-
   </div>
 </div>

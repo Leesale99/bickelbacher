@@ -1,9 +1,10 @@
  [
     {
       "image": "../assets/toolkit/images/salz_streuer.jpg",
-      "title": "steinsalz",
-      "category": "natural",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "steinsalz",
+      "type": "natural",
+      "color": "blue",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
@@ -13,12 +14,14 @@
         {"label": "vegan"},
         {"label": "vegetarisch"}
       ],
+      "rating": 5
     },
     {
       "image": "../assets/toolkit/images/salz_streuer.jpg",
-      "title": "steinsalz",
-      "category": "kräuter",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "steinsalz",
+      "type": "kräuter",
+      "color": "green",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
@@ -28,12 +31,14 @@
         {"label": "vegan"},
         {"label": "vegetarisch"}
       ],
+      "rating": 5
     },
     {
       "image": "../assets/toolkit/images/hickory_streuer.jpg",
-      "title": "steinsalz",
-      "category": "hickory",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "steinsalz",
+      "type": "hickory smoke",
+      "color": "brown",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
@@ -43,12 +48,14 @@
         {"label": "vegan"},
         {"label": "vegetarisch"}
       ],
+      "rating": 5
     },
     {
       "image": "../assets/toolkit/images/rind_glass.jpg",
-      "title": "bouillon",
-      "category": "rind",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "bouillon",
+      "type": "rind",
+      "color": "red",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
@@ -58,12 +65,14 @@
         {"label": "vegan"},
         {"label": "vegetarisch"}
       ],
+      "rating": 5
     },
     {
       "image": "../assets/toolkit/images/mediterrane_glass.jpg",
-      "title": "bouillon",
-      "category": "mediterrane",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "bouillon",
+      "type": "mediterrane",
+      "color": "dark-green",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
@@ -73,20 +82,21 @@
         {"label": "vegan"},
         {"label": "vegetarisch"}
       ],
+      "rating": 5
     },
     {
       "image": "../assets/toolkit/images/huhn_glass.jpg",
-      "title": "bouillon",
-      "category": "huhn",
-      "subtitle": "Hier ein Claim in Farbe",
+      "category": "bouillon",
+      "type": "huhn",
+      "color": "orange",
+      "title": "Hier ein Claim in Farbe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
       "labels": [
         {"label": "bio"},
         {"label": "gluten"},
         {"label": "hefe"},
         {"label": "laktose"},
-        {"label": "vegan"},
-        {"label": "vegetarisch"}
       ],
+      "rating": 3
     }
   ]

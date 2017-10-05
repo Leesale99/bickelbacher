@@ -1,19 +1,33 @@
 .sidebar {
   margin-top: space(2);
 
-  .info {
+  // .info {
+  //   margin-bottom: space(2);
+  //
+  //   @include media-breakpoint-up(md) {
+  //     margin-bottom: 0;
+  //   }
+  //
+  // }
+  //
+  // .subscribe,
+  // .topics {
+  //   @include media-breakpoint-up(lg) {
+  //     margin-top: space(2);
+  //   }
+  // }
+
+  &__widget {
     margin-bottom: space(2);
 
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-    }
+    & > * {
+      margin-left: auto;
+      margin-right: auto;
 
-  }
-
-  .subscribe,
-  .topics {
-    @include media-breakpoint-up(lg) {
-      margin-top: space(2);
+      @include media-breakpoint-up(lg) {
+        margin-left: inherit;
+        margin-right: inherit;
+      }
     }
   }
 }

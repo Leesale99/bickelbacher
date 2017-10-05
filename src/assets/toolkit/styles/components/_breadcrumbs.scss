@@ -1,51 +1,33 @@
 .breadcrumbs {
   display: flex;
-  justify-content: center;
-  @include media-breakpoint-up(lg) {
-    justify-content: flex-start;
-  }
+  justify-content: flex-start;
 
   &__item {
     &--active {
       @extend .breadcrumbs__item;
 
       & > span {
-        color: $color-dark;
-        font-size: 2em;
-        font-weight: 500;
-        @include media-breakpoint-up(lg) {
-          font-size: 1em;
-          font-style: italic;
-          font-weight: 400;
-        }
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 400;
       }
     }
 
     & + .breadcrumbs__item:before {
+      content: '/';
       display: inline-block;
       padding-right: 0.1rem;
       padding-left: 0.1rem;
-      color: $color-dark;
-      content: '/';
-      font-size: 2em;
-      @include media-breakpoint-up(lg) {
-        color: $text-color-primary;
-        font-size: 1em;
-      }
+      color: $text-color-primary;
+      font-size: 1em;
     }
 
     & > a {
       @extend %underline;
-      color: $color-dark;
-      font-style: normal;
-      font-size: 2em;
-      font-weight: 500;
-      @include media-breakpoint-up(lg) {
-        color: $text-color-primary;
-        font-style: italic;
-        font-size: 1em;
-        font-weight: 400;
-      }
+      color: $text-color-primary;
+      font-style: italic;
+      font-size: 1em;
+      font-weight: 400;
     }
   }
 }

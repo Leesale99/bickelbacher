@@ -61,12 +61,6 @@ button {
   color: $color-dark-red;
 }
 
-.main-content {
-  @include media-breakpoint-up(lg) {
-    margin-top: space(2);
-  }
-}
-
 .mobile-only {
 
   @include media-breakpoint-up(lg) {

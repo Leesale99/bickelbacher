@@ -1,5 +1,4 @@
 .select {
-  margin: 0 auto;
   position: relative;
   height: 2.857em;
   width: 100%;
@@ -16,6 +15,12 @@
     height: 100%;
     display: block;
     background-color: $bg-color-primary;
+  }
+
+  &--sm {
+    @extend .select;
+    height: 1.786em;
+    max-width: 12.5em;
   }
 
   & > select {

@@ -1,0 +1,18 @@
+title: "Shop"
+subtitle: "Es werden alle Produkte für Sie angezeigt"
+breadcrumbs:
+  title: "Bouillon Rind"
+  links:
+      - url: "#startseite"
+        title: "Startseite"
+      - url: "#startseite/shop"
+        title: "Shop"
+      - url: "#startseite/shop/bouillon"
+        title: "Bouillon & Brühen"
+sort_by_rating:
+  placeholder: "Nach Durchschnittsbewertung sortieren"
+  options:
+    - value: "item-1"
+      title: "Item 1"
+    - value: "item-2"
+      title: "Item 2"

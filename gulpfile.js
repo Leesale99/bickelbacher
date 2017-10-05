@@ -138,6 +138,22 @@ gulp.task('assembler', (done) => {
   assembler({
     logErrors: config.dev,
     dest: config.dest,
+    helpers: {
+      ratingsValue: function(rating) {
+        let out = '<span class="rating">\n';
+        let ratingValue = Number(rating);
+
+        for (let i = 0, l = ratingValue; i < l; i++) {
+          out = out + '  <svg class="rating__icon icon"><use xlink:href="#star"></use></svg>\n';
+        }
+
+        for (let i = 0, l = ratingValue; i < 5 - l; i++) {
+          out = out + '  <svg class="rating__icon--empty icon"><use xlink:href="#star"></use></svg>\n';
+        }
+
+        return out + '</span>';
+      }
+    },
   });
   done();
 });
