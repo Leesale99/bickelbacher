@@ -12,3 +12,4 @@ require('bootstrap');
 import './components/select';
 import './components/search';
 import './components/main-menu';
+import './components/horizontal-nav';

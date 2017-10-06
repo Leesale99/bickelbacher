@@ -67,3 +67,43 @@ button {
     display: none !important;
   }
 }
+
+.large-only {
+  @include media-breakpoint-down(sm) {
+    display: none !important;
+  }
+}
+
+
+.highlighted {
+  font-weight: 500;
+  font-style: italic;
+
+  &--primary {
+    @extend .highlighted;
+    color: $color-primary;
+  }
+}
+
+.link {
+  background: transparent;
+  border: none;
+}
+
+.button {
+  color: $color-light;
+  padding: 0 1em;
+  border-radius: 5px;
+  font-weight: 700;
+  height: 2.143em;
+
+  &--danger {
+    @extend .button;
+      background: #c03e26;
+  }
+
+  &--confirm {
+    @extend .button;
+    background: #d1b1cb;
+  }
+}

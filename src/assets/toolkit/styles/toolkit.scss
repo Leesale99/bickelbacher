@@ -16,6 +16,7 @@
 @import './layouts/secondary-nav';
 @import './layouts/sidebar';
 @import './layouts/inner-pages';
+@import './layouts/article';
 // Components
 @import './components/cart-button';
 @import './components/main-menu';
@@ -29,5 +30,9 @@
 @import './components/topics-block';
 @import './components/select';
 @import './components/product';
+@import './components/product-card';
 @import './components/caption';
 @import './components/rating';
+@import './components/horizontal-nav';
+@import './components/table';
+@import './components/comment';

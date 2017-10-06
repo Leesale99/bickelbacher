@@ -6,6 +6,10 @@
   color: $color-light;
   margin-top: space(3);
 
+  .button--danger {
+    margin-top: space(2);
+  }
+
   &-logo {
     width: 80%;
     height: 32%;

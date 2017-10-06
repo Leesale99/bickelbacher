@@ -6,6 +6,10 @@
   border: 1px solid $border-color;
   background-color: $color-light;
 
+  &--sm {
+    height: 1.786em;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -15,6 +19,7 @@
     height: 100%;
     display: block;
     background-color: $bg-color-primary;
+    border-left: 1px solid $border-color;
   }
 
   &--sm {

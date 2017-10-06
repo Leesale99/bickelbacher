@@ -1,39 +1,63 @@
 // =============================================================================
 // Mixins
 // =============================================================================
-
 // Spacer function
 @function space($key) {
-  @if map-has-key ($spaces, $key) {
+   @if map-has-key ($spaces, $key){
     @return map-get($spaces, $key);
   }
-
   @warn "Unknown #{$key} in $spaces";
-
+  @return null;
+}
+// Color function
+@function prodColor($color) {
+   @if map-has-key ($productColors, $color){
+    @return map-get($productColors, $color);
+  }
+  @warn "Unknown #{$color} in $productColors";
   @return null;
 }
 
-@mixin productStyles($name, $color) {
+@mixin productCardStyles($name, $color) {
+  .product-card {
+    &--#{$name} {
+      @extend .product-card !optional;
 
-    .product {
+      .product-card {
+        &__type {
+          color: #{$color};
+        }
 
-      &--#{$name} {
-        @extend .product;
-
-        .product {
-
-          &__type {
-            color: #{$color};
-          }
-
-          &__title {
-            color: #{$color};
-          }
+        &__title {
+          color: #{$color};
         }
       }
     }
+  }
 }
 
 @each $name, $color in $productColors {
-  @include productStyles($name, $color);
+   @include productCardStyles($name, $color);
+}
+
+@mixin productStyles($p-name, $p-color) {
+  .product {
+    &--#{$p-name} {
+      @extend .product !optional;
+
+      .product {
+        &__type {
+          color: #{$p-color};
+        }
+
+        &__title {
+          color: #{$p-color};
+        }
+      }
+    }
+  }
+}
+
+@each $p-name, $p-color in $productColors {
+   @include productStyles($p-name, $p-color);
 }

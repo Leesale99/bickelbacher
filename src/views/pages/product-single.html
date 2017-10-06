@@ -13,10 +13,141 @@ title: Shop
     <!-- Main content column -->
     <div class="col">
       <main class="main-content">
-          <div class="row">
-            <div class="col-12">
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <article class="article">
+              <header class="article__header">
+                <div class="product--red">
+                  <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                      <img class="product__img" src="../assets/toolkit/images/salz_streuer.jpg" alt="product image">
+                    </div>
+                    <div class="col">
+                      <div class="product__body">
+                        <div class="product__heading">
+                          <h2><span class="product__category">bouillon<span> <span class="product__type">rind</span></h2>
+                          <p class="product__rating">{{> rating-stars 3}} <span>(<span class="product__reviews">2</span> Kundenbewertungen)</span>
+                          </p>
+                          <p class="product__title">Kräftig und Klar</p>
+                          <p class="product__description">
+                            als Basis unserer aromastarken Bouillon- Qualität dient das rin aus artgerechterHaltung. Am Orginal orientiert, sind Suppen- gemüse und eine Brise guten Zucker zur aromasintensiverung verarbeitet.
+                          </p>
+                        </div>
+                        <div class="product__action">
+                          {{> select-field placeholder="0,125 kg Glas" size="sm"}}
+                          <button type="button" class="link highlighted--primary">Zurücksetzen</button>
+                        </div>
+                        <p class="product__total">2,89 &euro;</p>
+                        <p class="product__availability">Nicht Vorrätig</p>
+                        <div class="product__add-to-cart">
+                          {{> text-input-small value="1" max-length="12" name="qty"}}
+                          <button class="button--confirm" type="button">In den Warenkorb</button>
+                        </div>
+                        <p> Art.-Nr.: k.A. Kategorie: <span class="highlighted--primary">Bouillon & Brühen</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <section class="article__nav">
+                <!-- Horizontal navigation -->
+                <ul class="horizontal-nav" role="tablist">
+                  <li class="horizontal-nav__item active" data-panel="#desc" role="tab">Produktbeschreibng</li>
+                  <li class="horizontal-nav__item large-only" data-panel="#info" role="tab">Weitere Informationen</li>
+                  <li class="horizontal-nav__item" data-panel="#reviews" role="tab">Bewertungen (<span class="count">2</span>)</li>
+                </ul>
+
+                <div class="horizontal-nav__content">
+                  <div class="horizontal-nav__panel active" id="desc" role="tabpanel">
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <h3>Produktbeschreibung</h3>
+                      </div>
+                      <div class="col-md-6 col-xl-8">
+                        <p>
+                          Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                          künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                        </p>
+                        <p>Zubereitung: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                        <p>
+                          Zutaten: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                        </p>
+                      </div>
+                      <div class="col">
+                        <div class="table-block">
+                          {{> data-table}}
+                          {{> product-labels}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="horizontal-nav__panel large-only" id="info" role="tabpanel">
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <h3>Produktbeschreibung</h3>
+                      </div>
+                      <div class="col-md-6 col-xl-8">
+                        <p>
+                          Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                          künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                        </p>
+                        <p>Zubereitung: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                        <p>
+                          Zutaten: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                        </p>
+                      </div>
+                      <div class="col">
+                        <div class="table-block">
+                          {{> data-table}}
+                          {{> product-labels}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="horizontal-nav__panel" id="reviews" role="tabpanel">
+                    <div class="comment">
+                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
+                      <div class="comment__body">
+                        <div class="comment__heading">
+                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
+                          {{> rating-stars 4}}
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
+                      <div class="comment__body">
+                        <div class="comment__heading">
+                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
+                          {{> rating-stars 4}}
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Horizontal navigation -->
+              </section>
+              <footer>
+                {{> caption title="Sie mögen vielleicht auch..." }}
+                <div class="products-grid">
+                  <div class="row">
+                      {{#each similar-products}}
+                        <div class="col-md-6 col-xl-4">
+                          {{> product-card }}
+                        </div>
+                      {{/each}}
+                  </div>
+                </div>
+              </footer>
+            </article>
           </div>
+        </div>
 
       </main>
     </div>
@@ -26,7 +157,7 @@ title: Shop
       <aside class="sidebar">
         <div class="row">
           <div class="col-12">
-              {{> caption all-products.caption_sidebar}}
+            {{> caption all-products.caption_sidebar}}
           </div>
           <div class="sidebar__widget col-md-6 col-lg-12">
             <article class="info">

@@ -3,5 +3,7 @@
   {{#with title_sm as |value|}}
     <h2 class="caption__title--sm">{{value}}</h2>
   {{/with}}
-  <p class="caption__subtitle">{{subtitle}}</p>
+  {{#with subtitle as |value|}}
+    <p class="caption__subtitle">{{value}}</p>
+  {{/with}}
 </header>

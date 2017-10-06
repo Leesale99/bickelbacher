@@ -1,0 +1,131 @@
+.product-card {
+  display: block;
+  max-width: $space * 30;
+  border: 1px solid $border-color-light;
+
+  &:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+
+    .product-card__info-btn {
+        color: $bg-color-primary;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__body {
+    padding: space(1.5) space(1);
+  }
+
+  &__category {
+    font-size: $font-size-medium-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__type {
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: $font-size-medium;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    line-height: 1;
+    padding: space(1) 0;
+  }
+
+  &__labels {
+    padding-bottom: space(-1.5);
+  }
+
+  &__info {
+    display: flex;
+    padding: space(1) 0;
+
+    &-btn {
+      color: $color-dark;
+      margin-right: space(1.5);
+      transition: color 0.35s ease;
+
+      & > .icon {
+        width: $space * 7;
+        height: $space * 7;
+      }
+    }
+  }
+
+  &__meta {
+
+  }
+
+  &__data {
+    color: $color-dark;
+    line-height: 1.25;
+
+    &--lead {
+      @extend .product-card__data;
+      font-size: $font-size-medium-3;
+      font-weight: 700;
+    }
+  }
+
+  &__rating {
+    & > p {
+      display: inline;
+      font-size: $font-size-medium-3;
+      font-weight: 500;
+      color: $color-dark;
+    }
+
+    & > .rating {
+      font-size: $font-size-medium-3;
+      margin-left: space(-3);
+    }
+  }
+}
+
+
+.products-grid {
+
+  .product-card {
+    width: 100%;
+    margin: 0 auto  $space * 4;
+  }
+
+  .product-labels {
+
+    &__item {
+      @include media-breakpoint-up(xl) {
+        margin-right: space(-3);
+      }
+    }
+  }
+}
+
+
+.product-labels {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: inline-flex;
+    margin-right: space(-1.5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > .icon {
+      width: $space * 3.5;
+      height: $space * 3.5;
+    }
+  }
+}
