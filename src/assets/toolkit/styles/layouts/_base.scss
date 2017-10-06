@@ -96,6 +96,13 @@ button {
   border-radius: 5px;
   font-weight: 700;
   height: 2.143em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $color-light;
+  }
 
   &--danger {
     @extend .button;
@@ -105,5 +112,10 @@ button {
   &--confirm {
     @extend .button;
     background: #d1b1cb;
+  }
+
+  &--cta {
+    @extend .button;
+    background: $color-darker-red;
   }
 }

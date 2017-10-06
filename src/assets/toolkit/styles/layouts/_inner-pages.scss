@@ -9,6 +9,7 @@
     @include media-breakpoint-down(md) {
       margin: space(2) auto space(1);
     }
+
     &__subtitle,
     &__title {
       display: none;
@@ -31,5 +32,69 @@
 
   .select {
     margin: 0 auto space(2);
+  }
+}
+
+.intro {
+  width: 100%;
+  height: $space * 50;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: space(3);
+}
+
+.cta {
+  &__box {
+    padding: 0;
+    height: $space * 27.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border-color-light;
+    background: {
+      size: cover;
+      repeat: no-repeat;
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding: $space * 4 $space * 5;
+    }
+  }
+
+
+  &__wrapp {
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+    margin-left: auto;
+    }
+  }
+
+  h2 {
+    color: $color-light;
+    font-size: $font-size-extra-large;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: space(2);
+  }
+
+  .button--cta {
+    display: inline-flex;
+    height: auto;
+    padding: 0.5em;
+    font-size: $font-size-medium;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+
+.our-products {
+margin-top: space(3);
+
+  .caption {
+    text-align: center;
+    text-transform: uppercase;
   }
 }

@@ -1,16 +1,32 @@
-<h1>Hello, World!</h1>
+---
+layout: inner-pages
+title: Shop
+---
 
 
-
-{{> paragraph}}
-<div>
-
-	{{#each home.buttons}}
-
-	{{> button }}
-
-	{{/each}}
-</div>
-<div>
-
+<div class="container">
+		<section class="intro" style="background-image: url(../assets/toolkit/images/slider_comp_1170x500px.jpg)"></section>
+		<section class="cta">
+			<div class="row no-gutters">
+				<div class="col-lg-6">
+					<div class="cta__box" style="background-image: url(../assets/toolkit/images/verarbeiter.jpg">
+						<div class="cta__wrapp">
+							<h2>veredler <br> produkte</h2>
+							<a href="#" class="button--cta">für anspruchsvolle profis</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="cta__box" style="background-image: url(../assets/toolkit/images/verbraucher.jpg">
+						<div class="cta__wrapp">
+							<h2>gourment <br> produkte</h2>
+							<a href="#" class="button--cta">für bewusste verbraucher</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-products">
+			{{> caption title="unsere produkte im einsatz"}}
+		</section>
 </div>
