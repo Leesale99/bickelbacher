@@ -5,28 +5,91 @@ title: Shop
 
 
 <div class="container">
-		<section class="intro" style="background-image: url(../assets/toolkit/images/slider_comp_1170x500px.jpg)"></section>
-		<section class="cta">
-			<div class="row no-gutters">
-				<div class="col-lg-6">
-					<div class="cta__box" style="background-image: url(../assets/toolkit/images/verarbeiter.jpg">
-						<div class="cta__wrapp">
-							<h2>veredler <br> produkte</h2>
-							<a href="#" class="button--cta">für anspruchsvolle profis</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="cta__box" style="background-image: url(../assets/toolkit/images/verbraucher.jpg">
-						<div class="cta__wrapp">
-							<h2>gourment <br> produkte</h2>
-							<a href="#" class="button--cta">für bewusste verbraucher</a>
-						</div>
+	<section class="section intro" style="background-image: url(../assets/toolkit/images/slider_comp_1170x500px.jpg)"></section>
+	<section class="section">
+		<div class="row no-gutters">
+			<div class="col-lg-6">
+				<div class="show-more" style="background-image: url(../assets/toolkit/images/verarbeiter.jpg">
+					<div class="show-more__wrapp">
+						<h2>veredler <br> produkte</h2>
+						<a href="#" class="show-more__btn btn--danger">für anspruchsvolle profis</a>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="our-products">
-			{{> caption title="unsere produkte im einsatz"}}
-		</section>
+			<div class="col-lg-6">
+				<div class="show-more" style="background-image: url(../assets/toolkit/images/verbraucher.jpg">
+					<div class="show-more__wrapp">
+						<h2>gourment <br> produkte</h2>
+						<a href="#" class="show-more__btn btn--danger">für bewusste verbraucher</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section our-products">
+		<div class="row">
+			<div class="col">
+				{{> caption title="unsere produkte im einsatz"}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<a href="#" class="feature">
+					<img class="feature__img" src="../assets/toolkit/images/verarbeiter.jpg" alt="feature image">
+					<h3 class="feature__title">fachwissen entscheidet</h3>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="#" class="feature">
+					<img class="feature__img" src="../assets/toolkit/images/verbraucher.jpg" alt="feature image">
+					<h3 class="feature__title">qualität ist basis</h3>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="#" class="feature">
+					<img class="feature__img" src="../assets/toolkit/images/verarbeiter.jpg" alt="feature image">
+					<h3 class="feature__title">rezepte für verbraucher</h3>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="icon-feature">
+					<div class="icon-feature__icon"><svg class="icon"><use xlink:href="#delivery_icon"></use></svg></div>
+					<div class="icon-feature__body">
+						<h3>kostenfreie lieferung ab 35&euro;</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, distinctio quam iure dignissimos odio.</p>
+					</div>
+				</div>
+				<div class="icon-feature">
+					<div class="icon-feature__icon"><svg class="icon"><use xlink:href="#payment_icon"></use></svg></div>
+					<div class="icon-feature__body">
+						<h3>garantiert sicher einkaufen</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, deleniti, esse? Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+					</div>
+				</div>
+				<div class="icon-feature">
+					<div class="icon-feature__icon"><svg class="icon"><use xlink:href="#call_icon"></use></svg></div>
+					<div class="icon-feature__body">
+						<h3>immer fur sie erreichbar</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est voluptatem amet nesciunt!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<article class="cta">
+					<header>
+						<h3 class="cta__title">NEWSLETTER</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil inventore deleniti voluptatum amet distinctio voluptas, cupiditate fuga quas.</p>
+					</header>
+					<form action="" method="">
+						<input class="cta__input text-input" type="email" placeholder="Ihre E-Mail Adresse">
+						<button class="cta__btn btn--default" type="submit"><svg class="icon"><use xlink:href="#envelope"></use></svg> Absenden</button>
+					</form>
+				</article>
+			</div>
+		</div>
+	</section>
 </div>

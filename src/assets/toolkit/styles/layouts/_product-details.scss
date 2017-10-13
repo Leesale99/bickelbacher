@@ -1,8 +1,8 @@
-.article {
+.product-details {
 
   &__header,
   &__nav {
-    margin: 0 auto space(2);
+    margin: 0 auto space(2.5);
     max-width: $space * 30;
 
     @include media-breakpoint-up(md) {

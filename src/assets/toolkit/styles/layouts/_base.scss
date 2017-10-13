@@ -74,13 +74,16 @@ button {
   }
 }
 
+.underline {
+  @extend %underline;
+}
 
-.highlighted {
+.highlight {
   font-weight: 500;
   font-style: italic;
 
   &--primary {
-    @extend .highlighted;
+    @extend .highlight;
     color: $color-primary;
   }
 }
@@ -90,7 +93,7 @@ button {
   border: none;
 }
 
-.button {
+.btn {
   color: $color-light;
   padding: 0 1em;
   border-radius: 5px;
@@ -100,22 +103,37 @@ button {
   align-items: center;
   justify-content: center;
 
+  .icon {
+    margin-right: space(-2);
+    align-self: baseline;
+  }
+
   &:hover {
     color: $color-light;
   }
 
-  &--danger {
-    @extend .button;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &--warning {
+    @extend .btn;
       background: #c03e26;
   }
 
-  &--confirm {
-    @extend .button;
+  &--success {
+    @extend .btn;
     background: #d1b1cb;
   }
 
-  &--cta {
-    @extend .button;
+  &--danger {
+    @extend .btn;
     background: $color-darker-red;
+  }
+
+  &--default {
+    @extend .btn;
+    background: $color-gray-1;
   }
 }

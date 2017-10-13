@@ -1,0 +1,20 @@
+.cta {
+  background-color: $bg-color-gray;
+  text-align: center;
+  padding: space(3) space(1);
+
+   &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__input {
+    margin: space(2) 0;
+    max-width: $space * 25;
+    text-align: center;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}

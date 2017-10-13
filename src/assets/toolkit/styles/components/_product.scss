@@ -103,5 +103,9 @@ margin-top: space(2);
     display: flex;
     justify-content: flex-start;
     margin-bottom: space(-2);
+
+    & > button {
+      font-size: $font-size-base;
+    }
   }
 }

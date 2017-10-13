@@ -15,8 +15,8 @@ title: Shop
       <main class="main-content">
         <div class="row">
           <div class="col-12">
-            <article class="article">
-              <header class="article__header">
+            <article class="product-details">
+              <header class="product-details__header">
                 <div class="product--red">
                   <div class="row">
                     <div class="col-md-6 col-xl-4">
@@ -35,21 +35,21 @@ title: Shop
                         </div>
                         <div class="product__action">
                           {{> select-field placeholder="0,125 kg Glas" size="sm"}}
-                          <button type="button" class="link highlighted--primary">Zurücksetzen</button>
+                          <button type="button" class="link highlight--primary underline">Zurücksetzen</button>
                         </div>
                         <p class="product__total">2,89 &euro;</p>
                         <p class="product__availability">Nicht Vorrätig</p>
                         <div class="product__add-to-cart">
                           {{> text-input-small value="1" max-length="12" name="qty"}}
-                          <button class="button--confirm" type="button">In den Warenkorb</button>
+                          <button class="btn--success" type="button">In den Warenkorb</button>
                         </div>
-                        <p> Art.-Nr.: k.A. Kategorie: <span class="highlighted--primary">Bouillon & Brühen</span></p>
+                        <p> Art.-Nr.: k.A. Kategorie: <span class="highlight--primary">Bouillon & Brühen</span></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </header>
-              <section class="article__nav">
+              <section class="product-details__nav">
                 <!-- Horizontal navigation -->
                 <ul class="horizontal-nav" role="tablist">
                   <li class="horizontal-nav__item active" data-panel="#desc" role="tab">Produktbeschreibng</li>
@@ -59,50 +59,58 @@ title: Shop
 
                 <div class="horizontal-nav__content">
                   <div class="horizontal-nav__panel active" id="desc" role="tabpanel">
-                    <div class="row">
-                      <div class="col-sm-12">
+                    <article class="article">
+                      <header class="article__header">
                           <h3>Produktbeschreibung</h3>
-                      </div>
-                      <div class="col-md-6 col-xl-8">
-                        <p>
-                          Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
-                          künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
-                        </p>
-                        <p>Zubereitung: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
-                        <p>
-                          Zutaten: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
-                        </p>
-                      </div>
-                      <div class="col">
-                        <div class="table-block">
-                          {{> data-table}}
-                          {{> product-labels}}
+                      </header>
+                      <section class="article__body">
+                        <div class="row">
+                          <div class="col-md-6 col-xl-8">
+                            <p>
+                              Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                              künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                            </p>
+                            <p><strong>Zubereitung</strong>: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                            <p>
+                              <strong>Zutaten</strong>: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                            </p>
+                          </div>
+                          <div class="col">
+                            <aside class="table-block">
+                              {{> data-table}}
+                              {{> product-labels}}
+                            </aside>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </section>
+                    </article>
                   </div>
                   <div class="horizontal-nav__panel large-only" id="info" role="tabpanel">
-                    <div class="row">
-                      <div class="col-sm-12">
-                          <h3>Produktbeschreibung</h3>
-                      </div>
-                      <div class="col-md-6 col-xl-8">
-                        <p>
-                          Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
-                          künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
-                        </p>
-                        <p>Zubereitung: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
-                        <p>
-                          Zutaten: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
-                        </p>
-                      </div>
-                      <div class="col">
-                        <div class="table-block">
-                          {{> data-table}}
-                          {{> product-labels}}
+                    <article class="article">
+                      <header class="article__header">
+                          <h3>Rinderbouillon</h3>
+                      </header>
+                      <section class="article__body">
+                        <div class="row">
+                          <div class="col-md-6 col-xl-8">
+                            <p><strong>Zubereitung</strong>: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                            <p>
+                              <strong>Zutaten</strong>: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                            </p>
+                            <p>
+                              Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                              künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                            </p>
+                          </div>
+                          <div class="col">
+                            <aside class="table-block">
+                              {{> data-table}}
+                              {{> product-labels}}
+                            </aside>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </section>
+                    </article>
                   </div>
                   <div class="horizontal-nav__panel" id="reviews" role="tabpanel">
                     <div class="comment">
@@ -133,7 +141,7 @@ title: Shop
                 </div>
                 <!-- /Horizontal navigation -->
               </section>
-              <footer>
+              <footer class="product-details__footers">
                 {{> caption title="Sie mögen vielleicht auch..." }}
                 <div class="products-grid">
                   <div class="row">
@@ -170,15 +178,15 @@ title: Shop
             </article>
           </div>
           <div class="sidebar__widget col-md-6 col-lg-12">
-            <article class="subscribe">
+            <article class="register">
               <form action="" method="">
-                <header class="subscribe__header">
+                <header class="register__header">
                   <h3>Bleiben Sie Informiert.</h3>
                   <p>MIT UNSEREM NEWSLETTER, INFORMIEREN SIE RUND UM DAS THEMA GESUNDE ERNÄRHUNG UND RAFFINIERTES KOCHEN.</p>
                   <input class="text-input" type="email" placeholder="E-Mail-Adresse">
                   <input class="text-input" type="password" placeholder="Passwort estellen">
                 </header>
-                <footer class="subscribe__footer">
+                <footer class="register__footer">
                   <button type="submit">Jetzt Anmelden</button>
                   <p>Durch die Erstellung eines Kontos bestätgst du, dass du mit den <strong>AGB von Bickelbacher.com, unseren Datenschutzrichtlinien</strong> und der <strong>Verwendung von Cookies</strong> einverstanden bidt</p>
                 </footer>

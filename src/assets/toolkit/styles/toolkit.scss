@@ -16,7 +16,7 @@
 @import './layouts/secondary-nav';
 @import './layouts/sidebar';
 @import './layouts/inner-pages';
-@import './layouts/article';
+@import './layouts/product-details';
 // Components
 @import './components/cart-button';
 @import './components/main-menu';
@@ -26,7 +26,7 @@
 @import './components/footer-nav';
 @import './components/social';
 @import './components/info-block';
-@import './components/subscribe-block';
+@import './components/register-block';
 @import './components/topics-block';
 @import './components/select';
 @import './components/product';
@@ -36,3 +36,5 @@
 @import './components/horizontal-nav';
 @import './components/table';
 @import './components/comment';
+@import './components/article';
+@import './components/cta-block';
