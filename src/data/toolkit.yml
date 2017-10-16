@@ -1,8 +1,26 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
-  secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    Dark: "#000000"
+    Light: "#ffffff"
+    primary: "#bebc7e"
+  text:
+    text-base: "rgba(0, 0, 0, 0.7)"
+    text-danger: "#631f20"
+    text-strong: "#6e0000"
+    text-light: "#747474"
+  backgrounds:
+    bg-light: "#f8f9fa"
+    bg-dark: "#282828"
+    bg-gray: "#d8d8d8"
+  buttons:
+    btn-warning: "#c03e26"
+    btn-success: "#d1b1cb"
+    btn-default: "#747474"
+    btn-danger: "#6e0000"
+  product:
+    product-blue: "#3a799c"
+    product-green: "#007f2a"
+    product-brown: "#713500"
+    product-red: "#510607"
+    product-orange: "#ac5c00"
+    product-dark-green: "#003e0b"

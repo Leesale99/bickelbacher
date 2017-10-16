@@ -58,17 +58,22 @@ button {
 }
 
 .text-strong {
+  font-weight: 700;
   color: $color-dark-red;
 }
 
-.mobile-only {
+.text-danger {
+  color: $text-color-danger;
+}
+
+.md--down {
 
   @include media-breakpoint-up(lg) {
     display: none !important;
   }
 }
 
-.large-only {
+.md--up {
   @include media-breakpoint-down(sm) {
     display: none !important;
   }
@@ -88,9 +93,18 @@ button {
   }
 }
 
-.link {
-  background: transparent;
-  border: none;
+.label {
+  border-radius: 5px;
+  margin-bottom: space(1);
+  background-color: $bg-color-primary;
+  border: 1px solid $border-color;
+  padding: space(-2) space(1);
+  margin-right: space(1);
+  color: $color-light;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .btn {
@@ -117,6 +131,11 @@ button {
     box-shadow: none;
   }
 
+  &--link {
+    background: transparent;
+    border: none;
+  }
+
   &--warning {
     @extend .btn;
       background: #c03e26;
@@ -129,7 +148,7 @@ button {
 
   &--danger {
     @extend .btn;
-    background: $color-darker-red;
+    background: $color-dark-red;
   }
 
   &--default {

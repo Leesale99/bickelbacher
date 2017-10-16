@@ -35,10 +35,10 @@ title: Shop
                         </div>
                         <div class="product__action">
                           {{> forms.select-field placeholder="0,125 kg Glas" size="sm"}}
-                          <button type="button" class="link highlight--primary underline">Zurücksetzen</button>
+                          <button type="button" class="btn--link highlight--primary underline">Zurücksetzen</button>
                         </div>
                         <p class="product__total">2,89 &euro;</p>
-                        <p class="product__availability">Nicht Vorrätig</p>
+                        <p class="product__availability text-danger">Nicht Vorrätig</p>
                         <div class="product__add-to-cart">
                           {{> forms.text-input-small value="1" max-length="12" name="qty"}}
                           <button class="btn--success" type="button">In den Warenkorb</button>
@@ -53,7 +53,7 @@ title: Shop
                 <!-- Horizontal navigation -->
                 <ul class="horizontal-nav" role="tablist">
                   <li class="horizontal-nav__item active" data-panel="#desc" role="tab">Produktbeschreibng</li>
-                  <li class="horizontal-nav__item large-only" data-panel="#info" role="tab">Weitere Informationen</li>
+                  <li class="horizontal-nav__item md--up" data-panel="#info" role="tab">Weitere Informationen</li>
                   <li class="horizontal-nav__item" data-panel="#reviews" role="tab">Bewertungen (<span class="count">2</span>)</li>
                 </ul>
 
@@ -85,7 +85,7 @@ title: Shop
                       </section>
                     </article>
                   </div>
-                  <div class="horizontal-nav__panel large-only" id="info" role="tabpanel">
+                  <div class="horizontal-nav__panel md--up" id="info" role="tabpanel">
                     <article class="article">
                       <header class="article__header">
                           <h3>Rinderbouillon</h3>
@@ -113,7 +113,7 @@ title: Shop
                     </article>
                   </div>
                   <div class="horizontal-nav__panel" id="reviews" role="tabpanel">
-                    <div class="comment">
+                    <article class="comment">
                       <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
                       <div class="comment__body">
                         <div class="comment__heading">
@@ -124,8 +124,8 @@ title: Shop
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                         </p>
                       </div>
-                    </div>
-                    <div class="comment">
+                    </article>
+                    <article class="comment">
                       <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
                       <div class="comment__body">
                         <div class="comment__heading">
@@ -136,7 +136,7 @@ title: Shop
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                         </p>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
                 <!-- /Horizontal navigation -->

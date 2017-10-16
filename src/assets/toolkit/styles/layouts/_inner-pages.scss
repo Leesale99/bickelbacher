@@ -100,14 +100,14 @@
   }
 }
 
-.feature {
+.go-to {
   overflow: hidden;
   display: block;
   max-width: $space * 40;
   margin: 0 auto space(1.5);
 
   &:hover {
-    .feature__img {
+    .go-to__img {
       transform: scale(1.2);
     }
   }

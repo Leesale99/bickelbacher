@@ -17,8 +17,7 @@ $color-gray-4: #eeeeee;
 $color-gray-5: #d8d8d8;
 $color-primary: #bebc7e;
 $color-darker: #282828;
-$color-dark-red: #750000;
-$color-darker-red: #6e0000;
+$color-dark-red: #6e0000;
 $color-redish: #631f20;
 
 // Category Colors
@@ -37,7 +36,6 @@ $text-color-light:  rgba( $color-light, .7 );
 $text-color-dark: rgba( $color-dark, .7 );
 $text-color-medium: $color-gray-1;
 $text-color-primary: $color-primary;
-$text-color-info: $color-dark-red;
 $text-color-danger: $color-redish;
 
 
@@ -78,7 +76,7 @@ $bg-color-primary: $color-primary;
 $bg-color-light: $color-lighter;
 $bg-color-dark: $color-darker;
 $bg-color-gray: $color-gray-5;
-$bg-color-red: $color-darker-red;
+$bg-color-red: $color-dark-red;
 
 
 // Header
