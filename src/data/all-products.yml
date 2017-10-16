@@ -1,8 +1,8 @@
-caption_main:
+heading_main:
   title: "Shop"
   title_sm: "Startseite/Shop"
   subtitle: "Es werden alle Produkte für Sie angezeigt"
-caption_sidebar:
+heading_sidebar:
   title: "Bickelbacher"
   title_strong: "Aktuell"
   subtitle: "Nützliche Infos rund um unsere Produkte"

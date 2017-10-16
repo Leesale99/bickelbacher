@@ -5,7 +5,7 @@
 }
 
 .products-header {
-  .caption {
+  .heading {
     @include media-breakpoint-down(md) {
       margin: space(2) auto space(1);
     }
@@ -170,7 +170,7 @@
 .section {
   margin-bottom: space(3);
 
-  .caption {
+  .heading {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: space(3);

@@ -1,12 +1,12 @@
 
-<header class="caption">
-  <h2 class="caption__title">
+<header class="heading">
+  <h2 class="heading__title">
     {{#if title}}{{title}}{{else}}Bickelbacher{{/if}}
     {{#with title_strong as |value|}}<span class="text-strong">{{value}}</span>{{/with}}</h2>
   {{#with title_sm as |value|}}
-    <h2 class="caption__title--sm">{{value}}</h2>
+    <h2 class="heading__title--sm">{{value}}</h2>
   {{/with}}
   {{#with subtitle as |value|}}
-    <p class="caption__subtitle">{{value}}</p>
+    <p class="heading__subtitle">{{value}}</p>
   {{/with}}
 </header>
