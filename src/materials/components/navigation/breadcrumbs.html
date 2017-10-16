@@ -1,0 +1,13 @@
+<ul class="breadcrumbs">
+  {{#if links}}
+    {{#each links}}
+      <li class="breadcrumbs__item"><a href="{{url}}">{{title}}</a></li>
+    {{/each}}
+      <li class="breadcrumbs__item--active"><span>{{title}}</span></li>
+    {{else}}
+    <li class="breadcrumbs__item"><a href="#">Startseite</a></li>
+    <li class="breadcrumbs__item"><a href="#">Shop</a></li>
+    <li class="breadcrumbs__item"><a href="#">Bouillon & Brühen</a></li>
+    <li class="breadcrumbs__item--active"><span>Bouillon Rind</span></li>
+  {{/if}}
+</ul>

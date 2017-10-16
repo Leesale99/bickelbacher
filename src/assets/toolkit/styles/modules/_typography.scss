@@ -65,3 +65,20 @@
 	     url("../fonts/alegreya-sans-v3-latin-700italic.ttf") format("truetype"),
 	     url("../fonts/alegreya-sans-v3-latin-700italic.svg#Alegreya_Sans") format("svg");
 }
+
+
+.title {
+
+	&--1 {
+		font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+	}
+}
+
+.subtitle {
+
+	&--1 {
+
+	}
+}

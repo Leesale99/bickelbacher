@@ -6,27 +6,41 @@
   color: $color-light;
   margin-top: space(3);
 
-  .footer-nav {
-      margin-bottom: space(3);
+  .button--danger {
+    margin-top: space(2);
+  }
 
+  &-logo {
+    width: 80%;
+    height: 32%;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
     @include media-breakpoint-up(lg) {
-      margin-bottom: 0;
+      width: 95%;
+      height: 60%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 80%;
+      height: 60%;
     }
   }
 
-  .social {
-    //   margin-top: space(3);
-    //
-    // @include media-breakpoint-up(lg) {
-    //   margin-top: 0;
-    // }
+  &-nav {
+    margin-bottom: space(3);
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      & > a {
+        @extend %underline;
+      }
+    }
   }
 }
 
-.login-btn {
-  background: #c03e26;
-  color: $color-light;
-  padding: space(-2) space(2);
-  border-radius: 5px;
+.footer-btn {
   margin-top: space(2);
 }

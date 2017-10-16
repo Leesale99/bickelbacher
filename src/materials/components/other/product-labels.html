@@ -1,0 +1,14 @@
+<ul class="product-labels">
+{{#if labels}}
+{{#each labels}}
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#{{label}}_icon"></use></svg></li>
+{{/each}}
+{{else}}
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#bio_icon"></use></svg></li>
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#gluten_icon"></use></svg></li>
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#hefe_icon"></use></svg></li>
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#laktose_icon"></use></svg></li>
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#vegan_icon"></use></svg></li>
+  <li class="product-labels__item"><svg class="icon"><use xlink:href="#vegetarisch_icon"></use></svg></li>
+{{/if}}
+</ul>

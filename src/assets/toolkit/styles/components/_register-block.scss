@@ -1,0 +1,50 @@
+.register {
+    max-width: $space * 30;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+    }
+
+  &__header {
+      padding: space(1.5) space(1.5);
+    background-color: $bg-color-gray;
+    text-align: center;
+
+    & > h3 {
+      color: $color-dark;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    & > p {
+      text-transform: uppercase;
+      color: $color-dark;
+    }
+
+    & > .text-input {
+      margin-top: space(1.5);
+    }
+  }
+
+  &__footer {
+    background-color: $bg-color-primary;
+    padding: space(2) space(1.5);
+
+    & > button {
+      background-color: $bg-color-red;
+      color: $color-light;
+      width: 100%;
+      font-size: $font-size-medium-2;
+      font-weight: 700;
+      padding: space(1) space(1.5);
+      margin-bottom: space(1);
+    }
+
+    & > p {
+      font-size: 0.750rem;
+      color: $color-dark;
+      text-align: center;
+    }
+  }
+}

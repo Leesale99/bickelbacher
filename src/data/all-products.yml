@@ -1,0 +1,20 @@
+heading_main:
+  title: "Shop"
+  title_sm: "Startseite/Shop"
+  subtitle: "Es werden alle Produkte für Sie angezeigt"
+heading_sidebar:
+  title: "Bickelbacher"
+  title_strong: "Aktuell"
+  subtitle: "Nützliche Infos rund um unsere Produkte"
+breadcrumbs:
+  title: "Shop"
+  links:
+      - url: "#startseite"
+        title: "Startseite"
+sort_by_rating:
+  placeholder: "Nach Durchschnittsbewertung sortieren"
+  options:
+    - value: "item-1"
+      title: "Item 1"
+    - value: "item-2"
+      title: "Item 2"

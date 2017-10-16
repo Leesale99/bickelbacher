@@ -1,6 +1,6 @@
 .main-menu {
   transition: left 0.35s ease;
-  position: absolute;
+  position: fixed;
   display: block;
   background: $color-dark;
   top: 0;
@@ -42,14 +42,10 @@
   }
 
   &__item {
-    padding: 1.5em 2em;
     border-bottom: 1px solid $border-color;
-    @include media-breakpoint-up(sm) {
-      padding: 1.5em 4em;
-    }
+
     @include media-breakpoint-up(lg) {
       margin-right: 0.666em;
-      padding: inherit;
       border: none;
     }
 
@@ -59,20 +55,34 @@
   }
 
   &__link {
+    padding: 1.25em 2em;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    @include media-breakpoint-up(sm) {
+      padding: 1.25em 4em;
+    }
     @include media-breakpoint-up(lg) {
-      padding: 0.85em 0;
+      padding: 0;
     }
 
     & > a {
-      text-transform: uppercase;
+      @extend %underline;
       color: $color-light;
       font-weight: 700;
       display: inline-block;
+
+      &:before {
+        content: none;
+      }
+
       @include media-breakpoint-up(lg) {
         color: $text-color-light;
+        text-transform: uppercase;
+
+        &:before {
+          content: '';
+        }
       }
     }
 
@@ -87,17 +97,29 @@
 
 .sub-nav {
   display: none;
-  margin-left: 1em;
+  background: lighten($color-dark, 5%);
+
+  @include media-breakpoint-up(lg) {
+    display: none !important;
+    padding: 0.5em 4em;
+  }
 
   &__item {
-    padding: 0.333em 0;
+    padding: 0.35em 2em;
+
+    &:first-child {
+      padding-top: 1em;
+    }
 
     &:last-child {
-      padding-bottom: 0;
+      padding-bottom: 1em;
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.35em 4em;
     }
 
     & > a {
-      text-transform: uppercase;
       color: $color-light;
       font-weight: 700;
       font-size: 0.9em;

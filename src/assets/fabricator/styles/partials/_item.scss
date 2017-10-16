@@ -86,4 +86,30 @@
 
 .f-item-notes {
 	font-size: 0.875rem;
+	margin-bottom: 1em;
+}
+
+// Components sizes
+.f-item-preview {
+
+	.text-input {
+		max-width: 18rem;
+	}
+
+	.input-wrapp {
+		max-width: 6rem;
+	}
+
+	.info, .topics, .register {
+		max-width: 300px;
+	}
+
+	.cta, .show-more, .go-to, .icon-feature {
+		max-width: 450px;
+		margin: 0;
+	}
+
+	.comment {
+		max-width: 600px;
+	}
 }

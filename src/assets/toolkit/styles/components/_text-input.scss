@@ -1,13 +1,32 @@
 /**
  * Text-input
  */
-
 .text-input {
   height: $input-height;
   color: $input-text-color;
   font-size: $input-font-size;
   padding: space(1);
-  background-color : $input-bg-light;
+  background-color: $input-bg-light;
   border: 1px solid $border-color;
   width: 100%;
+
+  &--sm {
+    @extend .text-input;
+    height: $input-height-sm;
+  }
+
+  &__addon {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: calc(100% - 2px);
+    background: $input-bg-addon;
+    width: space(2);
+    display: block;
+    border-left: 1px solid $border-color;
+  }
+}
+
+.input-wrapp {
+  position: relative;
 }

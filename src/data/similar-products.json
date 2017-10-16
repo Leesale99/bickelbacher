@@ -1,0 +1,51 @@
+[
+   {
+     "image": "../assets/toolkit/images/rind_glass.jpg",
+     "category": "bouillon",
+     "type": "rind",
+     "color": "red",
+     "title": "Hier ein Claim in Farbe",
+     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+     "labels": [
+       {"label": "bio"},
+       {"label": "gluten"},
+       {"label": "hefe"},
+       {"label": "laktose"},
+       {"label": "vegan"},
+       {"label": "vegetarisch"}
+     ],
+     "rating": 5
+   },
+   {
+     "image": "../assets/toolkit/images/mediterrane_glass.jpg",
+     "category": "bouillon",
+     "type": "mediterrane",
+     "color": "dark-green",
+     "title": "Hier ein Claim in Farbe",
+     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+     "labels": [
+       {"label": "bio"},
+       {"label": "gluten"},
+       {"label": "hefe"},
+       {"label": "laktose"},
+       {"label": "vegan"},
+       {"label": "vegetarisch"}
+     ],
+     "rating": 5
+   },
+   {
+     "image": "../assets/toolkit/images/huhn_glass.jpg",
+     "category": "bouillon",
+     "type": "huhn",
+     "color": "orange",
+     "title": "Hier ein Claim in Farbe",
+     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+     "labels": [
+       {"label": "bio"},
+       {"label": "gluten"},
+       {"label": "hefe"},
+       {"label": "laktose"},
+     ],
+     "rating": 3
+   }
+ ]

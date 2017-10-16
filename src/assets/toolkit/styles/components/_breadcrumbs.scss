@@ -1,30 +1,33 @@
 .breadcrumbs {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: flex-start;
 
   &__item {
-
     &--active {
       @extend .breadcrumbs__item;
 
       & > span {
-        color: $color-dark;
+        font-size: 1em;
         font-style: italic;
+        font-weight: 400;
       }
     }
 
     & + .breadcrumbs__item:before {
+      content: '/';
       display: inline-block;
       padding-right: 0.1rem;
       padding-left: 0.1rem;
       color: $text-color-primary;
-      content: '/';
+      font-size: 1em;
     }
 
     & > a {
+      @extend %underline;
       color: $text-color-primary;
       font-style: italic;
+      font-size: 1em;
+      font-weight: 400;
     }
   }
 }

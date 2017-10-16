@@ -1,0 +1,19 @@
+---
+notes: Select element - default size
+---
+
+<div class="select{{#with size as |value|}} select--{{value}}{{/with}}">
+	<div class="select__title">{{#if placeholder}} {{placeholder}} {{else}} Select option {{/if}}</div>
+	<ul class="select__list"></ul>
+	<select>
+	{{#if options}}
+	  {{#each options}}
+	    <option value="{{value}}">{{title}}</option>
+	  {{/each}}
+	{{else}}
+		<option value="value-1">Option 1</option>
+		<option value="value-2">Option 2</option>
+		<option value="value-3">Option 3</option>
+	{{/if}}
+	</select>
+</div>

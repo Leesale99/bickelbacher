@@ -12,40 +12,13 @@ p {
 }
 
 a {
-  position: relative;
   color: $text-color-dark;
-  -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 
   &:hover {
-    color: $text-color-dark;
     outline: none;
     text-decoration: none;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-
-    &::before {
-      width: 100%;
-    }
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    -webkit-transition-property: width;
-    transition-property: width;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    -webkit-transition-duration: inherit;
-    transition-duration: inherit;
+    color: inherit;
   }
 }
 
@@ -84,29 +57,102 @@ button {
   @extend %wrapper;
 }
 
-
 .text-strong {
+  font-weight: 700;
   color: $color-dark-red;
 }
 
-.caption {
-  margin-bottom: space(1.5);
+.text-danger {
+  color: $text-color-danger;
+}
 
-  &__title {
-    font-weight: 700;
-    color: $color-dark;
-    font-size: 2em;
-    margin: 0;
-  }
+.md--down {
 
-  &__subtitle {
-    color: $color-dark;
+  @include media-breakpoint-up(lg) {
+    display: none !important;
   }
 }
 
-.sidebar {
+.md--up {
+  @include media-breakpoint-down(sm) {
+    display: none !important;
+  }
+}
 
-  .info, .subscribe, .topics {
-   margin-top: space(2);
- }
+.underline {
+  @extend %underline;
+}
+
+.highlight {
+  font-weight: 500;
+  font-style: italic;
+
+  &--primary {
+    @extend .highlight;
+    color: $color-primary;
+  }
+}
+
+.label {
+  border-radius: 5px;
+  margin-bottom: space(1);
+  background-color: $bg-color-primary;
+  border: 1px solid $border-color;
+  padding: space(-2) space(1);
+  margin-right: space(1);
+  color: $color-light;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.btn {
+  color: $color-light;
+  padding: 0 1em;
+  border-radius: 5px;
+  font-weight: 700;
+  height: 2.143em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    margin-right: space(-2);
+    align-self: baseline;
+  }
+
+  &:hover {
+    color: $color-light;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &--link {
+    background: transparent;
+    border: none;
+  }
+
+  &--warning {
+    @extend .btn;
+      background: #c03e26;
+  }
+
+  &--success {
+    @extend .btn;
+    background: #d1b1cb;
+  }
+
+  &--danger {
+    @extend .btn;
+    background: $color-dark-red;
+  }
+
+  &--default {
+    @extend .btn;
+    background: $color-gray-1;
+  }
 }

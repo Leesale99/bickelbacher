@@ -1,0 +1,34 @@
+.page-nav {
+  display: flex;
+
+  &__item {
+
+    & + * {
+      margin-left: space(-2);
+    }
+
+    &.active {
+
+      .page-nav__link {
+        background: $color-dark;
+        color: $color-light;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    padding: 0.05em 0.6em;
+    font-size: $font-size-large;
+
+    .icon {
+      vertical-align: middle;
+      width: 0.5em;
+      height: 1em;
+    }
+  }
+
+
+}

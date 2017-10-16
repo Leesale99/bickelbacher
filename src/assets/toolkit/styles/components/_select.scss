@@ -1,0 +1,65 @@
+.select {
+  position: relative;
+  height: 2.857em;
+  width: 100%;
+  max-width: $space * 30;
+  border: 1px solid $border-color;
+  background-color: $color-light;
+
+  &--sm {
+    height: 1.786em;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: space(2.5);
+    height: 100%;
+    display: block;
+    background-color: $bg-color-primary;
+    border-left: 1px solid $border-color;
+  }
+
+  &--sm {
+    @extend .select;
+    height: 1.786em;
+    max-width: 12.5em;
+  }
+
+  & > select {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 space(3) 0 space(-2);
+    cursor: pointer;
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    width: calc(100% + 2px);
+    cursor: pointer;
+    border: 1px solid $border-color;
+    left: -1px;
+    padding: space(-2) 0;
+    z-index: 1;
+    background-color: $color-light;
+
+    & > li {
+      display: block;
+      padding: space(-2);
+      text-align: left;
+
+      & + li {
+        // border-top: 1px solid $border-color;
+      }
+    }
+  }
+}

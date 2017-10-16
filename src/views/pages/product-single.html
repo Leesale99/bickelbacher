@@ -1,0 +1,216 @@
+---
+layout: inner-pages
+title: Shop
+---
+
+<!-- Secondary Navigation -->
+<aside class="secondary-nav">
+  {{> navigation.breadcrumbs product-single.breadcrumbs}}
+</aside>
+<!-- /Secondary Navigation -->
+<div class="container">
+  <div class="row">
+    <!-- Main content column -->
+    <div class="col">
+      <main class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <article class="product-details">
+              <header class="product-details__header">
+                <div class="product--red">
+                  <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                      <img class="product__img" src="../assets/toolkit/images/salz_streuer.jpg" alt="product image">
+                    </div>
+                    <div class="col">
+                      <div class="product__body">
+                        <div class="product__heading">
+                          <h2><span class="product__category">bouillon<span> <span class="product__type">rind</span></h2>
+                          <p class="product__rating">{{> other.rating-stars 3}} <span>(<span class="product__reviews">2</span> Kundenbewertungen)</span>
+                          </p>
+                          <p class="product__title">Kräftig und Klar</p>
+                          <p class="product__description">
+                            als Basis unserer aromastarken Bouillon- Qualität dient das rin aus artgerechterHaltung. Am Orginal orientiert, sind Suppen- gemüse und eine Brise guten Zucker zur aromasintensiverung verarbeitet.
+                          </p>
+                        </div>
+                        <div class="product__action">
+                          {{> forms.select-field placeholder="0,125 kg Glas" size="sm"}}
+                          <button type="button" class="btn--link highlight--primary underline">Zurücksetzen</button>
+                        </div>
+                        <p class="product__total">2,89 &euro;</p>
+                        <p class="product__availability text-danger">Nicht Vorrätig</p>
+                        <div class="product__add-to-cart">
+                          {{> forms.text-input-small value="1" max-length="12" name="qty"}}
+                          <button class="btn--success" type="button">In den Warenkorb</button>
+                        </div>
+                        <p> Art.-Nr.: k.A. Kategorie: <span class="highlight--primary">Bouillon & Brühen</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <section class="product-details__nav">
+                <!-- Horizontal navigation -->
+                <ul class="horizontal-nav" role="tablist">
+                  <li class="horizontal-nav__item active" data-panel="#desc" role="tab">Produktbeschreibng</li>
+                  <li class="horizontal-nav__item md--up" data-panel="#info" role="tab">Weitere Informationen</li>
+                  <li class="horizontal-nav__item" data-panel="#reviews" role="tab">Bewertungen (<span class="count">2</span>)</li>
+                </ul>
+
+                <div class="horizontal-nav__content">
+                  <div class="horizontal-nav__panel active" id="desc" role="tabpanel">
+                    <article class="article">
+                      <header class="article__header">
+                          <h3>Produktbeschreibung</h3>
+                      </header>
+                      <section class="article__body">
+                        <div class="row">
+                          <div class="col-md-6 col-xl-8">
+                            <p>
+                              Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                              künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                            </p>
+                            <p><strong>Zubereitung</strong>: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                            <p>
+                              <strong>Zutaten</strong>: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                            </p>
+                          </div>
+                          <div class="col">
+                            <aside class="table-block">
+                              {{> tables.data-table}}
+                              {{> other.product-labels}}
+                            </aside>
+                          </div>
+                        </div>
+                      </section>
+                    </article>
+                  </div>
+                  <div class="horizontal-nav__panel md--up" id="info" role="tabpanel">
+                    <article class="article">
+                      <header class="article__header">
+                          <h3>Rinderbouillon</h3>
+                      </header>
+                      <section class="article__body">
+                        <div class="row">
+                          <div class="col-md-6 col-xl-8">
+                            <p><strong>Zubereitung</strong>: 20 g pro Liter in heißem Wasser au ösen. Ergibt 7 l Brühe.</p>
+                            <p>
+                              <strong>Zutaten</strong>: Steinsalz, Maltodextrin*, Zucker*, Rind- eischpulver* 7%, Stärke*, Palmfett*, Hefeextrakt, natürliches Aroma, Zwiebel*, Pastinake*, Petersilie*, Gewürze*, Karotten*, Spinat*.( *aus kontrolliert biologischen Anbau )
+                            </p>
+                            <p>
+                              Unsere Rinderbouillon dient zum Würzen allerlei Speisen sowie als Basis individuell zubereitetet Suppen oder als Trinkbrühe. Als Salzkomponente verwenden wir Bickelbacher Steinsalz, ein unraffiniertes Natursalz aus deutscher Herkunft. Es sind keinerlei
+                              künstliche Geschmacksverstärker* (lt.Gesetz*),Farb-undKonservie- rungsstoffe enthalten.
+                            </p>
+                          </div>
+                          <div class="col">
+                            <aside class="table-block">
+                              {{> tables.data-table}}
+                              {{> other.product-labels}}
+                            </aside>
+                          </div>
+                        </div>
+                      </section>
+                    </article>
+                  </div>
+                  <div class="horizontal-nav__panel" id="reviews" role="tabpanel">
+                    <article class="comment">
+                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
+                      <div class="comment__body">
+                        <div class="comment__heading">
+                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
+                          {{> other.rating-stars 4}}
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                      </div>
+                    </article>
+                    <article class="comment">
+                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
+                      <div class="comment__body">
+                        <div class="comment__heading">
+                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
+                          {{> other.rating-stars 4}}
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <!-- /Horizontal navigation -->
+              </section>
+              <footer class="product-details__footers">
+                {{> typography.heading title="Sie mögen vielleicht auch..." }}
+                <div class="products-grid">
+                  <div class="row">
+                      {{#each similar-products}}
+                        <div class="col-md-6 col-xl-4">
+                          {{> product-card }}
+                        </div>
+                      {{/each}}
+                  </div>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+
+      </main>
+    </div>
+    <!-- /Main content column -->
+    <!-- Sidebar column -->
+    <div class="col-lg-4 col-xl-3">
+      <aside class="sidebar">
+        <div class="row">
+          <div class="col-12">
+            {{> typography.heading all-products.heading_sidebar}}
+          </div>
+          <div class="sidebar__widget col-md-6 col-lg-12">
+            <article class="info">
+              <img class="info__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/gemuese_glass.jpg" alt="placeholder">
+              <div class="info__body">
+                <h3>Deftige Eintöpfe mit<br>Hickory- Steinsalz</h3>
+                <p>Zum Beispiel das Hickory Smoke genial für die vegane Küche ist und soweiter.</p>
+              </div>
+              <button class="info__btn" type="button">ALLE THEMEN ANSEHEN</button>
+            </article>
+          </div>
+          <div class="sidebar__widget col-md-6 col-lg-12">
+            <article class="register">
+              <form action="" method="">
+                <header class="register__header">
+                  <h3>Bleiben Sie Informiert.</h3>
+                  <p>MIT UNSEREM NEWSLETTER, INFORMIEREN SIE RUND UM DAS THEMA GESUNDE ERNÄRHUNG UND RAFFINIERTES KOCHEN.</p>
+                  <input class="text-input" type="email" placeholder="E-Mail-Adresse">
+                  <input class="text-input" type="password" placeholder="Passwort estellen">
+                </header>
+                <footer class="register__footer">
+                  <button type="submit">Jetzt Anmelden</button>
+                  <p>Durch die Erstellung eines Kontos bestätgst du, dass du mit den <strong>AGB von Bickelbacher.com, unseren Datenschutzrichtlinien</strong> und der <strong>Verwendung von Cookies</strong> einverstanden bidt</p>
+                </footer>
+              </form>
+            </article>
+          </div>
+          <div class="sidebar__widget col">
+            <article class="topics">
+              <h3>Bleliebte Themen</h3>
+              <ul class="topics__list">
+                <li class="topics__label">Vegan</li>
+                <li class="topics__label">Bio</li>
+                <li class="topics__label">Laktose Frei</li>
+                <li class="topics__label">Grillen</li>
+                <li class="topics__label">Eintopf</li>
+                <li class="topics__label">Suppen</li>
+                <li class="topics__label">Cup of Soup</li>
+                <li class="topics__label">Kinder mahlzeit</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- /Sidebar column -->
+  </div>
+</div>

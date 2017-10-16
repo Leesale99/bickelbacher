@@ -17,15 +17,26 @@ $color-gray-4: #eeeeee;
 $color-gray-5: #d8d8d8;
 $color-primary: #bebc7e;
 $color-darker: #282828;
-$color-dark-red: #750000;
-$color-darker-red: #6e0000;
+$color-dark-red: #6e0000;
+$color-redish: #631f20;
+
+// Category Colors
+$productColors: (
+  blue: #3a799c,
+  green: #007f2a,
+  brown: #713500,
+  red: #510607,
+  orange: #ac5c00,
+  dark-green: #003e0b
+);
+
 
 // Text Colors
 $text-color-light:  rgba( $color-light, .7 );
 $text-color-dark: rgba( $color-dark, .7 );
 $text-color-medium: $color-gray-1;
 $text-color-primary: $color-primary;
-$text-color-info: $color-dark-red;
+$text-color-danger: $color-redish;
 
 
 // Typography
@@ -34,6 +45,9 @@ $font-size-base: 0.875rem;  // 14px
 $font-size-regular: 0.9375rem !default;  // 15px
 $font-size-medium: 1rem !default;  // 16px
 $font-size-medium-2: 1.125rem;  // 18px
+$font-size-medium-3: 1.250rem;  // 20px
+$font-size-large: 1.5rem;  // 24
+$font-size-extra-large: 3rem;  // 48px
 
 // Utility
 // ============================================
@@ -46,6 +60,7 @@ $spaces: (
   1: $space,
   1.5: $space * 1.5,
   2: $space * 2,
+  2.5: $space * 2.5,
   3: $space * 3
 );
 
@@ -61,7 +76,7 @@ $bg-color-primary: $color-primary;
 $bg-color-light: $color-lighter;
 $bg-color-dark: $color-darker;
 $bg-color-gray: $color-gray-5;
-$bg-color-red: $color-darker-red;
+$bg-color-red: $color-dark-red;
 
 
 // Header
@@ -77,5 +92,7 @@ $footer-font-size:$font-size-base;
 $input-text-color: $text-color-medium;
 $input-font-size: $font-size-medium;
 $input-height: 2.813em;
+$input-height-sm: 1.875em;
 $input-bg-light: $color-light;
 $input-bg-dark: $color-gray-3;
+$input-bg-addon: $color-gray-5;
