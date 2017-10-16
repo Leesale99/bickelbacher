@@ -27,7 +27,9 @@ $.fn.madCustomSelect = function() {
         text = $(this).text();
       $title.text(text);
       $list.toggle();
-      $select.val(val ? val : text);
+      $select.val(val
+        ? val
+        : text);
       $title.toggleClass('active');
       return false;
     });
@@ -44,9 +46,11 @@ $.fn.madCustomSelect = function() {
 };
 
 (function() {
-  'use strict';
 
-  if ($('.select').length) {
-    $('.select').madCustomSelect();
-  }
+  $(document).ready(() => {
+    if ($('.select').length) {
+      $('.select').madCustomSelect();
+    }
+  });
+
 }());

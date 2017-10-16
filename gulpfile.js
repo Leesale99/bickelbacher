@@ -42,6 +42,13 @@ const config = {
       watch: 'src/assets/toolkit/scripts/**/*',
     },
   },
+  vendor: {
+    toolkit: {
+      src: './src/assets/toolkit/vendor/**/*',
+      dest: 'dist/assets/toolkit/vendor',
+      watch: 'src/assets/toolkit/vendor/**/*',
+    },
+  },
   images: {
     toolkit: {
       src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
@@ -125,6 +132,11 @@ gulp.task('favicon', () => {
   .pipe(gulp.dest(config.dest));
 });
 
+// Vendor Scripts
+gulp.task('vendor', () => {
+  return gulp.src(config.vendor.toolkit.src)
+    .pipe(gulp.dest(config.vendor.toolkit.dest));
+});
 
 // images
 gulp.task('images', ['favicon'], () => {
@@ -180,6 +192,9 @@ gulp.task('serve', () => {
   gulp.task('scripts:watch', ['scripts'], browserSync.reload);
   gulp.watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], ['scripts:watch']);
 
+  gulp.task('vendor:watch', ['vendor'], browserSync.reload);
+  gulp.watch(config.images.toolkit.watch, ['vendor:watch']);
+
   gulp.task('images:watch', ['images'], browserSync.reload);
   gulp.watch(config.images.toolkit.watch, ['images:watch']);
 
@@ -188,7 +203,6 @@ gulp.task('serve', () => {
 
 });
 
-
 // default build task
 gulp.task('default', ['clean'], () => {
 
@@ -196,6 +210,7 @@ gulp.task('default', ['clean'], () => {
   const tasks = [
     'styles',
     'scripts',
+    'vendor',
     'images',
     'fonts',
     'assembler',

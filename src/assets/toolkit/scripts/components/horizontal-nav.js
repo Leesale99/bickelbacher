@@ -1,26 +1,30 @@
 import $ from 'jquery';
 
-(function () {
+(function() {
 
-  const $nav = $('.horizontal-nav'),
-    $navItem = $('.horizontal-nav__item'),
-    $navPanel = $('.horizontal-nav__panel');
+  $(document).ready(() => {
 
-  $navItem.each(function (index) {
-    let $this = $(this),
-      $id = $($this).data('panel').toString();
+    const $nav = $('.horizontal-nav'),
+      $navItem = $('.horizontal-nav__item'),
+      $navPanel = $('.horizontal-nav__panel');
 
-    $this.on('click', (e) => {
-      e.preventDefault();
+    $navItem.each(function(index) {
+      let $this = $(this),
+        $id = $($this).data('panel').toString();
 
-      if (!$this.hasClass('active')) {
-        $navItem.removeClass('active');
-        $this.addClass('active');
-      }
+      $this.on('click', (e) => {
+        e.preventDefault();
 
-      $navPanel.removeClass('active');
-      $($id).addClass('active');
+        if (!$this.hasClass('active')) {
+          $navItem.removeClass('active');
+          $this.addClass('active');
+        }
+
+        $navPanel.removeClass('active');
+        $($id).addClass('active');
+      });
     });
-  })
+
+  });
 
 }());
