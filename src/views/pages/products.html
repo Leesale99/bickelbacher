@@ -1,11 +1,8 @@
----
-layout: inner-pages
-title: Shop
----
+--- layout: inner-pages title: Shop ---
 
 <!-- Secondary Navigation -->
 <aside class="secondary-nav">
-  {{> breadcrumbs all-products.breadcrumbs}}
+  {{> navigation.breadcrumbs all-products.breadcrumbs}}
 </aside>
 <!-- /Secondary Navigation -->
 <div class="container">
@@ -18,19 +15,19 @@ title: Shop
             <div class="col-12">
               <div class="products-header row">
                 <div class="col-lg-6 col-xl-4">
-                  {{> caption all-products.caption_main}}
+                  {{> typography.caption all-products.caption_main}}
                 </div>
                 <div class="col-lg-6 col-xl-4 align-self-end">
-                  {{> select-field all-products.sort_by_rating}}
+                  {{> forms.select-field all-products.sort_by_rating}}
                 </div>
               </div>
               <section class="products-grid">
                 <div class="row">
-                    {{#each products}}
-                      <div class="col-md-6 col-xl-4">
-                        {{> product-card }}
-                      </div>
-                    {{/each}}
+                  {{#each products}}
+                  <div class="col-md-6 col-xl-4">
+                    {{> product-card }}
+                  </div>
+                  {{/each}}
                 </div>
               </section>
             </div>
@@ -44,7 +41,7 @@ title: Shop
       <aside class="sidebar">
         <div class="row">
           <div class="col-12">
-              {{> caption all-products.caption_sidebar}}
+            {{> typography.caption all-products.caption_sidebar}}
           </div>
           <div class="sidebar__widget col-md-6 col-lg-12">
             <article class="info">

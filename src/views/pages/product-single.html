@@ -5,7 +5,7 @@ title: Shop
 
 <!-- Secondary Navigation -->
 <aside class="secondary-nav">
-  {{> breadcrumbs product-single.breadcrumbs}}
+  {{> navigation.breadcrumbs product-single.breadcrumbs}}
 </aside>
 <!-- /Secondary Navigation -->
 <div class="container">
@@ -26,7 +26,7 @@ title: Shop
                       <div class="product__body">
                         <div class="product__heading">
                           <h2><span class="product__category">bouillon<span> <span class="product__type">rind</span></h2>
-                          <p class="product__rating">{{> rating-stars 3}} <span>(<span class="product__reviews">2</span> Kundenbewertungen)</span>
+                          <p class="product__rating">{{> other.rating-stars 3}} <span>(<span class="product__reviews">2</span> Kundenbewertungen)</span>
                           </p>
                           <p class="product__title">Kräftig und Klar</p>
                           <p class="product__description">
@@ -34,13 +34,13 @@ title: Shop
                           </p>
                         </div>
                         <div class="product__action">
-                          {{> select-field placeholder="0,125 kg Glas" size="sm"}}
+                          {{> forms.select-field placeholder="0,125 kg Glas" size="sm"}}
                           <button type="button" class="link highlight--primary underline">Zurücksetzen</button>
                         </div>
                         <p class="product__total">2,89 &euro;</p>
                         <p class="product__availability">Nicht Vorrätig</p>
                         <div class="product__add-to-cart">
-                          {{> text-input-small value="1" max-length="12" name="qty"}}
+                          {{> forms.text-input-small value="1" max-length="12" name="qty"}}
                           <button class="btn--success" type="button">In den Warenkorb</button>
                         </div>
                         <p> Art.-Nr.: k.A. Kategorie: <span class="highlight--primary">Bouillon & Brühen</span></p>
@@ -77,8 +77,8 @@ title: Shop
                           </div>
                           <div class="col">
                             <aside class="table-block">
-                              {{> data-table}}
-                              {{> product-labels}}
+                              {{> tables.data-table}}
+                              {{> other.product-labels}}
                             </aside>
                           </div>
                         </div>
@@ -104,8 +104,8 @@ title: Shop
                           </div>
                           <div class="col">
                             <aside class="table-block">
-                              {{> data-table}}
-                              {{> product-labels}}
+                              {{> tables.data-table}}
+                              {{> other.product-labels}}
                             </aside>
                           </div>
                         </div>
@@ -118,7 +118,7 @@ title: Shop
                       <div class="comment__body">
                         <div class="comment__heading">
                           <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
-                          {{> rating-stars 4}}
+                          {{> other.rating-stars 4}}
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -130,7 +130,7 @@ title: Shop
                       <div class="comment__body">
                         <div class="comment__heading">
                           <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
-                          {{> rating-stars 4}}
+                          {{> other.rating-stars 4}}
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -142,7 +142,7 @@ title: Shop
                 <!-- /Horizontal navigation -->
               </section>
               <footer class="product-details__footers">
-                {{> caption title="Sie mögen vielleicht auch..." }}
+                {{> typography.caption title="Sie mögen vielleicht auch..." }}
                 <div class="products-grid">
                   <div class="row">
                       {{#each similar-products}}
@@ -165,7 +165,7 @@ title: Shop
       <aside class="sidebar">
         <div class="row">
           <div class="col-12">
-            {{> caption all-products.caption_sidebar}}
+            {{> typography.caption all-products.caption_sidebar}}
           </div>
           <div class="sidebar__widget col-md-6 col-lg-12">
             <article class="info">

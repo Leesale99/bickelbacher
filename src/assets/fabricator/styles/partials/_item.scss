@@ -86,4 +86,17 @@
 
 .f-item-notes {
 	font-size: 0.875rem;
+	margin-bottom: 1em;
+}
+
+// Components sizes
+.f-item-preview {
+
+	.text-input {
+		max-width: 18rem;
+	}
+
+	.input-wrapp {
+		max-width: 6rem;
+	}
 }
