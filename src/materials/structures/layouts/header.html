@@ -1,0 +1,138 @@
+---
+notes: |
+  Main navigation list can have 4 different item types:
+  * regular items, visible on all screens - class: `main-nav__item`
+  * items with submenu ( submenu dropdown is added to this item in mobile menu ) - class:  `main-nav__item--has-dropdown`,
+  * items which are part of mobile menu but not visible in full-width header for larger screens - has added utility class: `md--down`,
+  * a combination of the previous two item types - class `main-nav__item--has-dropdown md--down`
+---
+
+
+<!-- Header -->
+<header class="header">
+  <!-- Header Top Bar -->
+  <div class="top-bar">
+    <p class="top-bar__text">So erreichen Sie uns <a href="tel:+498241911271">+49 8241 911271</a> oder <a href="mailto:info@bickelbacher.com">info@bickelbacher.com</a></p>
+    <ul class="top-bar__nav">
+      <li class="top-bar__nav-item"><a href="#">Mein Benutzerkonto</a></li>
+      <li class="top-bar__nav-item"><a href="#">Zur Kasse</a></li>
+      <li class="top-bar__nav-item"><a href="#">Anmelden</a></li>
+    </ul>
+  </div>
+  <!-- /Header Top Bar -->
+  <!-- Header Main Bar -->
+  <nav class="main-bar--primary">
+    <!-- Menu Toggle Button -->
+    <button class="menu-btn" id="menu-toggler" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="menu-btn__wrap">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+      </div>
+    </button>
+    <!-- /Menu Toggle Button -->
+    <!-- Header Logo -->
+    <a class="logo" href="#"><svg class="icon"><use xlink:href="#logo"></use></svg></a>
+    <!-- Header Logo -->
+    <!-- Main Menu - (Collapse into Off-Screen Menu on smaller screens) -->
+    <div class="main-menu" id="main-menu">
+      <!-- Header Search -->
+      <div class="search">
+        <input class="search__field" type="text" placeholder="Search" aria-label="Search">
+        <svg class="search__icon icon"><use xlink:href="#search"></use></svg>
+      </div>
+      <!-- /Header Search -->
+      <!-- Main Navigation List -->
+      <ul class="main-nav">
+        <!-- Nav Item with Submenu -->
+        <li class="main-nav__item--has-dropdown">
+          <div class="main-nav__link">
+            <a href="#">Produkte</a>
+            <svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+          </div>
+          <ul class="sub-nav">
+            <li class="sub-nav__item"><a href="#">Lorem ipsum dolor</a></li>
+            <li class="sub-nav__item"><a href="#">Lorem ipsum</a></li>
+            <li class="sub-nav__item"><a href="#">Lorem ipsum dolor sit.</a></li>
+          </ul>
+        </li>
+        <!-- /Nav Item -->
+        <!-- Nav Item with Submenu -->
+        <li class="main-nav__item--has-dropdown">
+          <div class="main-nav__link">
+            <a href="#">Über Bickelbacher</a>
+            <svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+          </div>
+          <ul class="sub-nav">
+            <li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 4</a></li>
+          </ul>
+        </li>
+        <!-- /Nav Item -->
+        <!-- Nav Item with Submenu -->
+        <li class="main-nav__item--has-dropdown">
+          <div class="main-nav__link">
+            <a href="#">Shop</a>
+            <svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+          </div>
+          <ul class="sub-nav">
+            <li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 4</a></li>
+          </ul>
+        </li>
+        <!-- /Nav Item -->
+        <!-- Nav Item - visible on mobile only -->
+        <li class="main-nav__item md--down">
+          <div class="main-nav__link">
+            <a href="#">Login</a>
+          </div>
+        </li>
+        <!-- /Nav Item -->
+        <!-- Nav Item - visible on mobile only -->
+        <li class="main-nav__item md--down">
+          <div class="main-nav__link">
+            <a href="#">AGB</a>
+          </div>
+        </li>
+        <!-- /Nav Item -->
+        <!-- Nav Item - visible on mobile only -->
+        <li class="main-nav__item md--down">
+          <div class="main-nav__link">
+            <a href="#">Newletter Anmelden</a>
+          </div>
+        </li>
+        <!--/ Nav Item -->
+        <!-- Nav Item with Submenu - visible on mobile only  -->
+        <li class="main-nav__item--has-dropdown md--down">
+          <div class="main-nav__link">
+            <a href="#">Mobile Only with Submenu</a>
+            <svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+          </div>
+          <ul class="sub-nav">
+            <li class="sub-nav__item"><a href="#">ITEM 1</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 2</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 3</a></li>
+            <li class="sub-nav__item"><a href="#">ITEM 4</a></li>
+          </ul>
+        </li>
+        <!-- /Nav Item -->
+      </ul>
+      <!-- /Main Navigation List -->
+    </div>
+    <!-- /Main Menu -->
+    <!-- Shoping Cart Button -->
+    <button class="cart-btn" type="button">
+      <svg class="cart-btn__icon icon"><use xlink:href="#shopping-cart"></use></svg>
+      <p class="cart-btn__label">
+        (<span class="count">0</span>) Artikel - <span class="price">0.00</span>
+      </p>
+    </button>
+    <!-- /Shoping Cart Button -->
+  </nav>
+  <!-- /Header Main Bar -->
+</header>
+<!-- /Header -->

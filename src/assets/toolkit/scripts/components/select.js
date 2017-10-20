@@ -6,7 +6,8 @@ $.fn.madCustomSelect = function() {
 
     const $this = $(this),
       $select = $this.find('select'),
-      $title = $this.children('.select__title'),
+      $field = $this.children('.select__field'),
+      $title = $this.find('.select__title'),
       $list = $this.children('.select__list'),
       $win = $('body');
 
@@ -16,7 +17,7 @@ $.fn.madCustomSelect = function() {
     }
 
     // open list
-    $title.on('click', function() {
+    $field.on('click', function() {
       $list.toggle();
       $(this).toggleClass('active');
     });

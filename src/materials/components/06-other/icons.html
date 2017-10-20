@@ -1,0 +1,15 @@
+---
+notes: |
+  Symbols are SVG and the `<symbol>` method described here [- CSS-Tricks - SVG symbol a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/).
+
+  This element is a hidden `<svg>` element that persists on every page.
+
+  Include a symbol using the following syntax:
+
+  `<svg class="icon"><use xlink:href="#{icon-name}"></use></svg>`
+---
+<!-- Left Arrow Icon  -->
+<svg class="icon">
+    <use xlink:href="#chevron-left" />
+</svg>
+<!-- /SVG Icon -->

@@ -2,8 +2,12 @@
 notes: Select element - small size
 ---
 
+<!-- Small Select Dropdown Element -->
 <div class="select select--sm">
-	<div class="select__title">{{#if placeholder}} {{placeholder}} {{else}} Select option {{/if}}</div>
+	<div class="select__field">
+		<div class="select__title">{{#if placeholder}} {{placeholder}} {{else}} Select option {{/if}}</div>
+		<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+	</div>
 	<ul class="select__list"></ul>
 	<select>
 	{{#if options}}
@@ -17,3 +21,4 @@ notes: Select element - small size
 	{{/if}}
 	</select>
 </div>
+<!-- /Small Select Dropdown Element -->

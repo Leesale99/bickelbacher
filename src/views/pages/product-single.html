@@ -1,6 +1,6 @@
 ---
 layout: inner-pages
-title: Shop
+title: Bickelbacher - Product
 ---
 
 <!-- Secondary Navigation -->
@@ -20,7 +20,7 @@ title: Shop
                 <div class="product--red">
                   <div class="row">
                     <div class="col-md-6 col-xl-4">
-                      <img class="product__img" src="../assets/toolkit/images/salz_streuer.jpg" alt="product image">
+                      <img class="product__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/salz_streuer.jpg" alt="product image">
                     </div>
                     <div class="col">
                       <div class="product__body">
@@ -34,7 +34,7 @@ title: Shop
                           </p>
                         </div>
                         <div class="product__action">
-                          {{> forms.select-field placeholder="0,125 kg Glas" size="sm"}}
+                          {{> forms.select-dropdown placeholder="0,125 kg Glas" size="sm"}}
                           <button type="button" class="btn--link highlight--primary underline">Zurücksetzen</button>
                         </div>
                         <p class="product__total">2,89 &euro;</p>
@@ -113,30 +113,8 @@ title: Shop
                     </article>
                   </div>
                   <div class="horizontal-nav__panel" id="reviews" role="tabpanel">
-                    <article class="comment">
-                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
-                      <div class="comment__body">
-                        <div class="comment__heading">
-                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
-                          {{> other.rating-stars 4}}
-                        </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
-                      </div>
-                    </article>
-                    <article class="comment">
-                      <div class="comment__img"><img src="../assets/toolkit/images/mustermann.jpg" alt="comment author image"></div>
-                      <div class="comment__body">
-                        <div class="comment__heading">
-                          <p><span class="author">Mustermann</span> - <span class="date">00.00.2017</span></p>
-                          {{> other.rating-stars 4}}
-                        </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
-                      </div>
-                    </article>
+                    {{> features.comment}}
+                    {{> features.comment}}
                   </div>
                 </div>
                 <!-- /Horizontal navigation -->
@@ -147,7 +125,7 @@ title: Shop
                   <div class="row">
                       {{#each similar-products}}
                         <div class="col-md-6 col-xl-4">
-                          {{> product-card }}
+                          {{> features.product-card }}
                         </div>
                       {{/each}}
                   </div>
@@ -160,57 +138,8 @@ title: Shop
       </main>
     </div>
     <!-- /Main content column -->
-    <!-- Sidebar column -->
-    <div class="col-lg-4 col-xl-3">
-      <aside class="sidebar">
-        <div class="row">
-          <div class="col-12">
-            {{> typography.heading all-products.heading_sidebar}}
-          </div>
-          <div class="sidebar__widget col-md-6 col-lg-12">
-            <article class="info">
-              <img class="info__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/gemuese_glass.jpg" alt="placeholder">
-              <div class="info__body">
-                <h3>Deftige Eintöpfe mit<br>Hickory- Steinsalz</h3>
-                <p>Zum Beispiel das Hickory Smoke genial für die vegane Küche ist und soweiter.</p>
-              </div>
-              <button class="info__btn" type="button">ALLE THEMEN ANSEHEN</button>
-            </article>
-          </div>
-          <div class="sidebar__widget col-md-6 col-lg-12">
-            <article class="register">
-              <form action="" method="">
-                <header class="register__header">
-                  <h3>Bleiben Sie Informiert.</h3>
-                  <p>MIT UNSEREM NEWSLETTER, INFORMIEREN SIE RUND UM DAS THEMA GESUNDE ERNÄRHUNG UND RAFFINIERTES KOCHEN.</p>
-                  <input class="text-input" type="email" placeholder="E-Mail-Adresse">
-                  <input class="text-input" type="password" placeholder="Passwort estellen">
-                </header>
-                <footer class="register__footer">
-                  <button type="submit">Jetzt Anmelden</button>
-                  <p>Durch die Erstellung eines Kontos bestätgst du, dass du mit den <strong>AGB von Bickelbacher.com, unseren Datenschutzrichtlinien</strong> und der <strong>Verwendung von Cookies</strong> einverstanden bidt</p>
-                </footer>
-              </form>
-            </article>
-          </div>
-          <div class="sidebar__widget col">
-            <article class="topics">
-              <h3>Bleliebte Themen</h3>
-              <ul class="topics__list">
-                <li class="topics__label">Vegan</li>
-                <li class="topics__label">Bio</li>
-                <li class="topics__label">Laktose Frei</li>
-                <li class="topics__label">Grillen</li>
-                <li class="topics__label">Eintopf</li>
-                <li class="topics__label">Suppen</li>
-                <li class="topics__label">Cup of Soup</li>
-                <li class="topics__label">Kinder mahlzeit</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </aside>
-    </div>
-    <!-- /Sidebar column -->
+
+    {{> layouts.sidebar}}
+
   </div>
 </div>

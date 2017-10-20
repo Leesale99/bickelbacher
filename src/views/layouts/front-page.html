@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -8,12 +11,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Classic - Slider Revolution</title>
-	<meta name="description" content="Slider Revolution Example" />
-	<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
-	<meta name="author" content="ThemePunch" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{title}}</title>
 
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/toolkit.css">
@@ -44,167 +45,11 @@
 	{{> icons}}
 	<!-- /Icons Sprite -->
 
-	<!-- Header -->
-	<header class="header">
-		<div class="top-bar">
-			<p class="top-bar__text">So erreichen Sie uns <a href="tel:+498241911271">+49 8241 911271</a> oder <a href="mailto:info@bickelbacher.com">info@bickelbacher.com</a></p>
-			<ul class="top-bar__nav">
-				<li class="top-bar__nav-item"><a href="#">Mein Benutzerkonto</a></li>
-				<li class="top-bar__nav-item"><a href="#">Zur Kasse</a></li>
-				<li class="top-bar__nav-item"><a href="#">Anmelden</a></li>
-			</ul>
-		</div>
-		<nav class="main-bar--primary">
-			<button class="menu-btn" id="menu-toggler" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="menu-btn__wrap">
-					<span class="menu-btn__bar"></span>
-					<span class="menu-btn__bar"></span>
-					<span class="menu-btn__bar"></span>
-				</div>
-			</button>
-			<a class="logo" href="#"><svg class="icon"><use xlink:href="#logo"></use></svg></a>
-			<div class="main-menu" id="main-menu">
-				<div class="search">
-					<input class="search__field" type="text" placeholder="Search" aria-label="Search">
-					<svg class="search__icon icon"><use xlink:href="#search"></use></svg>
-				</div>
-				<ul class="main-nav">
-					<li class="main-nav__item--has-subnav">
-						<div class="main-nav__link">
-							<a href="#">Produkte</a>
-							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
-						</div>
-						<ul class="sub-nav">
-							<li class="sub-nav__item"><a href="#">Lorem ipsum dolor</a></li>
-							<li class="sub-nav__item"><a href="#">Lorem ipsum</a></li>
-							<li class="sub-nav__item"><a href="#">Lorem ipsum dolor sit.</a></li>
-						</ul>
-					</li>
-					<li class="main-nav__item--has-subnav">
-						<div class="main-nav__link">
-							<a href="#">Über Bickelbacher</a>
-							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
-						</div>
-						<ul class="sub-nav">
-							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
-						</ul>
-					</li>
-					<li class="main-nav__item--has-subnav">
-						<div class="main-nav__link">
-							<a href="#">Shop</a>
-							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
-						</div>
-						<ul class="sub-nav">
-							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
-						</ul>
-					</li>
-					<li class="main-nav__item md--down">
-						<div class="main-nav__link">
-							<a href="#">Login</a>
-						</div>
-					</li>
-					<li class="main-nav__item md--down">
-						<div class="main-nav__link">
-							<a href="#">AGB</a>
-						</div>
-					</li>
-					<li class="main-nav__item md--down">
-						<div class="main-nav__link">
-							<a href="#">Newletter Anmelden</a>
-						</div>
-					</li>
-					<li class="main-nav__item--has-subnav md--down">
-						<div class="main-nav__link">
-							<a href="#">Mobile Only with Submenu</a>
-							<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
-						</div>
-						<ul class="sub-nav">
-							<li class="sub-nav__item"><a href="#">ITEM 1</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 2</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 3</a></li>
-							<li class="sub-nav__item"><a href="#">ITEM 4</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<button class="cart-btn" type="button">
-				<svg class="cart-btn__icon icon"><use xlink:href="#shopping-cart"></use></svg>
-				<p class="cart-btn__label">
-					(<span class="count">0</span>) Artikel - <span class="price">0.00</span>
-				</p>
-			</button>
-		</nav>
-	</header>
-	<!-- /Header -->
+	{{> layouts.header}}
 
 	{% body %}
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<svg class="footer-logo icon"><use xlink:href="#signature-logo"></use></svg>
-				</div>
-				<div class="col-md-7 col-lg-9">
-					<div class="row">
-						<div class="col-sm-6 col-lg-3">
-							<div class="footer-nav">
-								<h3 class="footer-nav__title">CUSTOMER SERVICE</h3>
-								<ul>
-									<li class="footer-nav__item"><a href="#">Contact Us</a></li>
-									<li class="footer-nav__item"><a href="#">Returns & Exchange</a></li>
-									<li class="footer-nav__item"><a href="#">FAQ</a></li>
-									<li class="footer-nav__item"><a href="#">International FAQ</a></li>
-									<li class="footer-nav__item"><a href="#">Warranty</a></li>
-									<li class="footer-nav__item"><a href="#">Sitemap</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="footer-nav">
-								<h3 class="footer-nav__title">CORPORATE</h3>
-								<ul>
-									<li class="footer-nav__item"><a href="#">Corporate & Uniform</a></li>
-									<li class="footer-nav__item"><a href="#">Sales</a></li>
-									<li class="footer-nav__item"><a href="#">Careers</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<div class="footer-nav">
-								<h3 class="footer-nav__title">LEGAL</h3>
-								<ul>
-									<li class="footer-nav__item"><a href="#">Privacy Policy</a></li>
-									<li class="footer-nav__item"><a href="#">Terms & Conditions</a></li>
-									<li class="footer-nav__item"><a href="#">California Transparency</a></li>
-									<li class="footer-nav__item"><a href="#">Act</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<ul class="social">
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li>
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li>
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#instagram"></use></svg></a></li>
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#youtube"></use></svg></a></li>
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#vimeo"></use></svg></a></li>
-								<li class="social__icon"><a href="#"><svg class="icon"><use xlink:href="#pinterest-p"></use></svg></a></li>
-							</ul>
-							<button class="footer-btn btn--warning" type="button">HANDLER LOGIN</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- /Footer -->
+	{{> layouts.footer}}
 
 
 	<script type="text/javascript" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/vendor/slider/assets/warning.js"></script>

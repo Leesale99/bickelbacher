@@ -2,8 +2,12 @@
 notes: Select element - default size
 ---
 
+<!-- Select Dropdown Element -->
 <div class="select{{#with size as |value|}} select--{{value}}{{/with}}">
-	<div class="select__title">{{#if placeholder}} {{placeholder}} {{else}} Select option {{/if}}</div>
+	<div class="select__field">
+		<div class="select__title">{{#if placeholder}} {{placeholder}} {{else}} Select option {{/if}}</div>
+		<svg class="icon"><use xlink:href="#chevron-down"></use></svg>
+	</div>
 	<ul class="select__list"></ul>
 	<select>
 	{{#if options}}
@@ -17,3 +21,4 @@ notes: Select element - default size
 	{{/if}}
 	</select>
 </div>
+<!-- /Select Dropdown Element -->

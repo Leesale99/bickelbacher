@@ -1,5 +1,5 @@
 <a href="#{{#if category}}{{category}}-{{type}}{{/if}}" class="product-card{{#if color}}--{{ color }}{{/if}}">
-  <img class="product-card__img" src="{{#if image}}{{ image }}{{else}}../assets/toolkit/images/salz_streuer.jpg{{/if}}" alt="product image">
+  <img class="product-card__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}{{#if image}}{{ image }}{{else}}assets/toolkit/images/salz_streuer.jpg{{/if}}" alt="product image">
   <div class="product-card__body">
     <header>
       <h3 class="product-card__category">{{#if category}}{{ category }}{{else}}steinsalz{{/if}} <span class="product-card__type">{{#if type}}{{ type }}{{else}}natural{{/if}}</span></h3>

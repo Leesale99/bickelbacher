@@ -1,0 +1,35 @@
+<div class="col-sm-7">
+  <div class="product--red">
+    <div class="row">
+      <div class="col-md-6 col-xl-4">
+        <img class="product__img" src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/salz_streuer.jpg" alt="product image">
+      </div>
+      <div class="col">
+        <div class="product__body">
+          <div class="product__heading">
+            <h2><span class="product__category">bouillon<span> <span class="product__type">rind</span></h2>
+            <p class="product__rating">
+              {{> other.rating-stars 3}}
+              <span>(<span class="product__reviews">2</span> Kundenbewertungen)</span>
+            </p>
+            <p class="product__title">Kräftig und Klar</p>
+            <p class="product__description">
+              als Basis unserer aromastarken Bouillon- Qualität dient das rin aus artgerechterHaltung. Am Orginal orientiert, sind Suppen- gemüse und eine Brise guten Zucker zur aromasintensiverung verarbeitet.
+            </p>
+          </div>
+          <div class="product__action">
+            {{> forms.select-dropdown placeholder="0,125 kg Glas" size="sm"}}
+            <button type="button" class="btn--link highlight--primary underline">Zurücksetzen</button>
+          </div>
+          <p class="product__total">2,89 &euro;</p>
+          <p class="product__availability text-danger">Nicht Vorrätig</p>
+          <div class="product__add-to-cart">
+            {{> forms.text-input-small value="1" max-length="12" name="qty"}}
+            <button class="btn--success" type="button">In den Warenkorb</button>
+          </div>
+          <p> Art.-Nr.: k.A. Kategorie: <span class="highlight--primary">Bouillon & Brühen</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
