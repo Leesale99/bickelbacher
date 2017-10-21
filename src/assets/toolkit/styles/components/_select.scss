@@ -75,10 +75,6 @@
       display: block;
       padding: space(-2);
       text-align: left;
-
-      & + li {
-        // border-top: 1px solid $border-color;
-      }
     }
   }
 }

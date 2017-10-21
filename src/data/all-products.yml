@@ -14,7 +14,7 @@ breadcrumbs:
 sort_by_rating:
   placeholder: "Nach Durchschnittsbewertung sortieren"
   options:
-    - value: "item-1"
-      title: "Item 1"
-    - value: "item-2"
-      title: "Item 2"
+    - value: "lowest"
+      title: "lowest"
+    - value: "highest"
+      title: "highest"
